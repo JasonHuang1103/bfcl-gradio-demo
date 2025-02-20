@@ -1,0 +1,200 @@
+model,entry_id,error_reason_type,error_reason_description,error_turn_id
+DeepSeek-V3,multi_turn_base_0,Failed to Understand Environment State,"The model failed to correctly navigate the directory structure, leading to incorrect assumptions about the location of 'final_report.pdf' and 'previous_report.pdf'.",0
+DeepSeek-V3,multi_turn_base_1,Failed to Understand Environment State,The model attempted to search for 'Error' in 'log.txt' without navigating to the 'archive' directory where the file was moved.,2
+DeepSeek-V3,multi_turn_base_2,Failed to Understand Environment State,"The model repeatedly attempted to change to a non-existent directory 'document' instead of 'documents', leading to failure in creating and managing files in the correct directory.",0
+DeepSeek-V3,multi_turn_base_3,Failed to Understand Environment State,The model attempted to copy files using incorrect paths without changing to the correct directory first.,1
+DeepSeek-V3,multi_turn_base_4,Failed to Understand Function Documentation,The model failed to correctly utilize the 'post_tweet' function by not properly tagging and mentioning users as specified in the user's request.,2
+DeepSeek-V3,multi_turn_base_5,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_6,Failed to Understand Environment State,"The model attempted to create the file 'Annual_Report_2023.docx' in the root directory instead of the 'communal' directory, leading to a file existence error.",0
+DeepSeek-V3,multi_turn_base_7,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_8,Failed to Understand User's Request,The model posted a new tweet with the comment 'Cheers!' instead of adding it as a comment to the existing tweet.,3
+DeepSeek-V3,multi_turn_base_9,Failed to Understand Function Documentation,"The model attempted to use a path in the 'cp' command's destination parameter, which is not allowed according to the function documentation.",1
+DeepSeek-V3,multi_turn_base_10,Failed to Understand Environment State,"The model failed to navigate to the correct directory before creating the 'Projects' directory, resulting in the directory being created at the wrong location.",0
+DeepSeek-V3,multi_turn_base_11,Failed to Understand Environment State,"The model attempted to change to a non-existent directory '/temp', leading to an unnecessary error. It should have directly listed the contents of the current directory.",0
+DeepSeek-V3,multi_turn_base_12,Failed to Understand Environment State,The model repeatedly attempted to change to the 'Documents' directory despite receiving errors indicating the directory does not exist or cannot be accessed as specified.,0
+DeepSeek-V3,multi_turn_base_13,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_14,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_15,Failed to Understand Environment State,"The model failed to correctly update the file content in 'DataSet1.csv' after multiple echo operations, resulting in an incorrect final state of the file content.",1
+DeepSeek-V3,multi_turn_base_16,Failed to Understand Function Documentation,"The model repeatedly attempted to use paths in the 'cd' and 'cp' commands, which are not allowed according to the function documentation.",0
+DeepSeek-V3,multi_turn_base_17,Failed to Understand User's Request,"The model failed to send the test report to Kelly after adding her as a contact, which was part of the user's request.",2
+DeepSeek-V3,multi_turn_base_18,Failed to Understand User's Request,"The model failed to copy all text files, missing 'History101.txt' and 'History202.txt', and incorrectly attempted to create a directory that already existed.",0
+DeepSeek-V3,multi_turn_base_19,Failed to Understand Function Documentation,"The model repeatedly attempted to use a path in the 'destination' parameter for the 'cp' function, which is not allowed according to the function documentation.",1
+DeepSeek-V3,multi_turn_base_20,Failed to Understand Function Documentation,"The model failed to correctly use the 'echo' function to write the actual diff content into 'file5.txt'. Instead, it wrote a placeholder text.",1
+DeepSeek-V3,multi_turn_base_21,Failed to Understand User's Request,The model modified the content of 'Draft.txt' to match 'ProjectOverview.txt' instead of comparing them to ensure they are identical.,1
+DeepSeek-V3,multi_turn_base_22,Failed to Understand Environment State,"The model attempted to access 'project_analysis.txt' without navigating to the correct directory first, leading to a failure in retrieving the file content.",0
+DeepSeek-V3,multi_turn_base_23,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_24,Failed to Understand Function Documentation,"The model attempted to move and rename a file in one step using a path in the destination, which is not supported by the 'mv' function as per the documentation.",1
+DeepSeek-V3,multi_turn_base_25,Failed to Understand Function Documentation,"The model failed to use the 'sort' function to organize the lines in 'summary.txt' alphabetically, instead it only read the file content without performing the sorting operation.",2
+DeepSeek-V3,multi_turn_base_26,Failed to Understand Environment State,The assistant repeatedly attempted to change directories to 'tmp' despite receiving an error indicating the directory does not exist or cannot be accessed as specified. This indicates a failure to properly interpret the environment state and adjust its actions accordingly.,0
+DeepSeek-V3,multi_turn_base_27,Failed to Understand Environment State,"The model repeatedly attempted to create the same ticket multiple times, leading to an inflated ticket queue.",1
+DeepSeek-V3,multi_turn_base_28,Failed to Understand Function Documentation,"The model failed to use the 'grep' function to identify lines with errors in the file, instead it used 'cat' to read the entire file content.",1
+DeepSeek-V3,multi_turn_base_29,Failed to Understand User's Request,The model wrote the wrong content into the file. It should have written the user's previous question instead of the current one.,2
+DeepSeek-V3,multi_turn_base_30,Failed to Understand Function Documentation,The model repeatedly used the 'find' function with incorrect paths and excessive iterations instead of directly using 'cd' to navigate to the correct directory and 'cat' to read the file content.,0
+DeepSeek-V3,multi_turn_base_31,Failed to Understand User's Request,"The model incorrectly reported the total number of lines in 'data.txt' as 1, which is incorrect based on the content provided. It failed to accurately count the lines in the file.",0
+DeepSeek-V3,multi_turn_base_32,Failed to Understand Function Documentation,"The model failed to use the 'echo' function to write the logarithm result into 'result.txt', leading to an incomplete final state.",1
+DeepSeek-V3,multi_turn_base_33,Failed to Understand User's Request,The model sent a message to the wrong user (USR002) instead of Catherine (USR003) due to misinterpretation of the user's request.,3
+DeepSeek-V3,multi_turn_base_34,Failed to Understand User's Request,"The model did not read the content of the finance_report.txt file before calculating the mean, assuming it already had the necessary data.",1
+DeepSeek-V3,multi_turn_base_35,Failed to Understand Environment State,"The model attempted to access files using incorrect paths, failing to navigate to the correct directory before performing operations.",0
+DeepSeek-V3,multi_turn_base_36,Failed to Understand Environment State,"The model attempted to copy 'project_summary.txt' directly into 'archive' without first ensuring the file was in the correct directory, leading to a failure in the copy operation.",1
+DeepSeek-V3,multi_turn_base_37,Failed to Understand Environment State,"The model repeatedly attempted to change to a non-existent directory 'temp', failing to recognize that it was already in the correct directory context.",0
+DeepSeek-V3,multi_turn_base_38,Failed to Understand Environment State,"The model repeatedly attempted to remove the file and directory without correctly navigating to the 'SuperResearch' directory first, leading to errors and failure to achieve the desired end state.",0
+DeepSeek-V3,multi_turn_base_39,Failed to Understand Environment State,"The model created a nested 'WebDevProjects' directory and failed to populate the files with the correct content, leading to a mismatch with the expected directory structure and file contents.",0
+DeepSeek-V3,multi_turn_base_40,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_41,Failed to Understand User's Request,The assistant failed to forward the notes to Bob and instead repeatedly attempted to log in the user without sending the message.,0
+DeepSeek-V3,multi_turn_base_42,Failed to Understand User's Request,"The model used the 'cat' function to display the file content instead of sorting it and counting characters, as requested by the user.",2
+DeepSeek-V3,multi_turn_base_43,Failed to Understand Environment State,"The model attempted to read the file './Documents/annual_report.txt' without changing to the correct directory, resulting in an error due to an invalid character in the file path.",2
+DeepSeek-V3,multi_turn_base_44,Failed to Understand Environment State,"The model did not navigate to the correct directory before attempting to write to 'annual_report.txt', resulting in the file being created in the wrong location.",0
+DeepSeek-V3,multi_turn_base_45,Failed to Understand Environment State,"The model attempted to copy a file using an incorrect path, assuming a nested directory structure that did not exist.",1
+DeepSeek-V3,multi_turn_base_46,Failed to Understand Function Documentation,"The assistant repeatedly attempted to remove the 'Drafts' directory without first removing its contents, despite receiving errors indicating the directory was not empty. This indicates a misunderstanding of the 'rmdir' function, which requires the directory to be empty before removal.",0
+DeepSeek-V3,multi_turn_base_47,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_48,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_49,Failed to Understand Environment State,"The model did not update the file content after sorting, leading to incorrect results in subsequent operations.",1
+DeepSeek-V3,multi_turn_base_50,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_51,Failed to Understand Environment State,"The model failed to start the engine after pressing the brake pedal, leaving the engine state as 'stopped' instead of 'running'.",1
+DeepSeek-V3,multi_turn_base_52,Failed to Understand Function Documentation,"The model failed to correctly utilize the 'post_tweet' function by not including the tags and mentions in the tweet, despite the user's request to include them.",2
+DeepSeek-V3,multi_turn_base_53,Failed to Understand Environment State,"The model attempted to start the engine without ensuring all doors were locked, which is a prerequisite for starting the engine.",1
+DeepSeek-V3,multi_turn_base_54,Failed to Understand User's Request,The model retweeted the wrong tweet. It searched for a tweet with the keyword 'tire maintenance' instead of retweeting the specific tweet ID provided in the user's request.,2
+DeepSeek-V3,multi_turn_base_55,Failed to Understand Environment State,"The model filled the fuel tank beyond the required amount, leading to an incorrect final fuel level state.",0
+DeepSeek-V3,multi_turn_base_56,Failed to Understand User's Request,"The assistant repeatedly called the function to get zip codes without proceeding to estimate the distance, failing to fulfill the user's request to determine the distance to Rivermist.",0
+DeepSeek-V3,multi_turn_base_57,Failed to Understand Function Documentation,"The assistant repeatedly called the 'get_zipcode_based_on_city' function without proceeding to estimate the distance between the two cities, which was the user's request.",0
+DeepSeek-V3,multi_turn_base_58,Failed to Understand Environment State,"The model failed to fill the fuel tank to the required level before starting the engine, leading to an incorrect environment state.",1
+DeepSeek-V3,multi_turn_base_59,Failed to Understand User's Request,"The model repeatedly called the function to get zip codes without proceeding to estimate the distance between the two cities, which was the user's primary request.",0
+DeepSeek-V3,multi_turn_base_60,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_61,Failed to Understand Environment State,The model attempted to fill the fuel tank with an incorrect amount without verifying the current fuel level and the required amount to reach the destination.,1
+DeepSeek-V3,multi_turn_base_62,Failed to Understand Function Documentation,"The model repeatedly called the 'get_zipcode_based_on_city' function without proceeding to estimate the distance or send the message, indicating a failure to utilize the function documentation to complete the user's request.",0
+DeepSeek-V3,multi_turn_base_63,Failed to Understand Environment State,"The model attempted to start the engine without ensuring the brake pedal was pressed, which is a prerequisite for starting the engine.",1
+DeepSeek-V3,multi_turn_base_64,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_65,Failed to Understand Function Documentation,"The assistant failed to use the 'fillFuelTank' function to add the converted fuel amount to the vehicle's fuel level, resulting in an incorrect final fuel level.",0
+DeepSeek-V3,multi_turn_base_66,Failed to Understand Environment State,"The model attempted to fill the fuel tank with 40 gallons without considering the current fuel level, leading to an overfill error.",1
+DeepSeek-V3,multi_turn_base_67,Failed to Understand Environment State,"The model attempted to fill the fuel tank to its maximum capacity without considering the current fuel level, resulting in an error.",2
+DeepSeek-V3,multi_turn_base_68,Failed to Understand Environment State,"The model repeatedly attempted to fill the fuel tank beyond its capacity without checking the current fuel level first, leading to multiple errors.",0
+DeepSeek-V3,multi_turn_base_69,Failed to Understand User's Request,"The model repeatedly called the function to get zip codes without proceeding to estimate the distance or fill the fuel tank, leading to a forced termination.",0
+DeepSeek-V3,multi_turn_base_70,Failed to Understand Function Documentation,"The model failed to correctly convert liters to gallons and did not fill the fuel tank with the correct amount of fuel, resulting in an incorrect final fuel level.",0
+DeepSeek-V3,multi_turn_base_71,Failed to Understand Function Documentation,"The model failed to correctly calculate the amount of fuel needed to fill the tank to full capacity, resulting in an error when attempting to fill 50 gallons instead of the required 45 gallons.",2
+DeepSeek-V3,multi_turn_base_72,Failed to Understand Environment State,The model attempted to fill the fuel tank with an amount that exceeded the tank's capacity without checking the current fuel level first.,0
+DeepSeek-V3,multi_turn_base_73,Failed to Understand Environment State,The model attempted to fill the fuel tank beyond its capacity multiple times without checking the current fuel level first.,0
+DeepSeek-V3,multi_turn_base_74,Failed to Understand Environment State,"The model refilled the fuel tank multiple times without checking the current fuel level, leading to an incorrect final fuel level.",0
+DeepSeek-V3,multi_turn_base_75,Failed to Understand User's Request,The model failed to post the tire pressure update on Twitter as requested by the user.,1
+DeepSeek-V3,multi_turn_base_76,Failed to Understand Function Documentation,"The model attempted to authenticate the Twitter account unnecessarily, despite the user already being authenticated, leading to incorrect function calls and an incorrect end state.",1
+DeepSeek-V3,multi_turn_base_77,Failed to Understand User's Request,"The model repeatedly called the function to get zip codes without proceeding to estimate the distance, failing to complete the user's request.",0
+DeepSeek-V3,multi_turn_base_78,Failed to Understand Function Documentation,"The model incorrectly used the 'tags' parameter instead of 'mentions' for the hashtag in the tweet, leading to a mismatch in the final state.",1
+DeepSeek-V3,multi_turn_base_79,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_80,Failed to Understand User's Request,"The model repeatedly called the function to get zip codes without proceeding to estimate the distance, which was the user's primary request.",0
+DeepSeek-V3,multi_turn_base_81,Failed to Understand Environment State,"The model repeatedly filled the fuel tank without checking the current fuel level, leading to an incorrect final fuel level state.",0
+DeepSeek-V3,multi_turn_base_82,Failed to Understand Environment State,"The model failed to adjust the fuel amount correctly based on the current fuel level, attempting to fill the tank beyond its capacity.",1
+DeepSeek-V3,multi_turn_base_83,Failed to Understand Environment State,"The model repeatedly filled the fuel tank beyond its capacity without checking the current fuel level, leading to errors.",0
+DeepSeek-V3,multi_turn_base_84,Failed to Understand Function Documentation,"The model failed to press the brake pedal before starting the engine, which is a requirement according to the function documentation.",0
+DeepSeek-V3,multi_turn_base_85,Failed to Understand User's Request,"The model repeatedly called the function to get zip codes without proceeding to estimate the distance or check fuel feasibility, leading to an infinite loop.",0
+DeepSeek-V3,multi_turn_base_86,Failed to Understand Environment State,"The model set the navigation to a generic location 'Nearest Tire Shop, Auto Repair, City, State' instead of the specific address '456 Oakwood Avenue, Rivermist, 83214' provided by the tool response.",1
+DeepSeek-V3,multi_turn_base_87,Failed to Understand Environment State,"The model attempted to start the engine without ensuring all doors were locked first, leading to an error. The engine state remained 'stopped' instead of 'running'.",2
+DeepSeek-V3,multi_turn_base_88,Failed to Understand Environment State,"The model attempted to start the engine without pressing the brake pedal, which is a prerequisite for starting the engine.",2
+DeepSeek-V3,multi_turn_base_89,Failed to Understand Function Documentation,"The model repeatedly called 'get_zipcode_based_on_city' without proceeding to 'estimate_distance', failing to complete the user's request for a distance estimate.",0
+DeepSeek-V3,multi_turn_base_90,Failed to Understand Environment State,"The model failed to lock the doors before attempting to start the engine, which is a prerequisite for starting the engine.",0
+DeepSeek-V3,multi_turn_base_91,Failed to Understand User's Request,"The assistant repeatedly sent the message 'It is hot outside.' to Michael multiple times instead of just once, indicating a misunderstanding of the user's request to send a single message.",0
+DeepSeek-V3,multi_turn_base_92,Failed to Understand Environment State,"The model attempted to fill the fuel tank to its maximum capacity without considering the current fuel level, resulting in an error due to exceeding the tank's capacity.",2
+DeepSeek-V3,multi_turn_base_93,Failed to Understand Environment State,"The model attempted to fill the fuel tank multiple times without recognizing that it was already full, leading to repeated errors about exceeding tank capacity.",0
+DeepSeek-V3,multi_turn_base_94,Failed to Understand Environment State,"The model set the navigation destination to 'Nearest Tire Shop' instead of the specific address '456 Oakwood Avenue, Rivermist, 83214'.",1
+DeepSeek-V3,multi_turn_base_95,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_96,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_97,Failed to Understand Function Documentation,The model repeatedly called the 'get_zipcode_based_on_city' function without proceeding to estimate the distance between the two cities using the obtained zip codes.,0
+DeepSeek-V3,multi_turn_base_98,Failed to Understand Function Documentation,"The model repeatedly attempted to lock the already locked rear_left door, indicating a misunderstanding of the function's response or the current state of the doors.",0
+DeepSeek-V3,multi_turn_base_99,Failed to Understand Environment State,"The model failed to fill the fuel tank after determining the vehicle cannot drive the required distance, resulting in an incorrect final fuel level.",0
+DeepSeek-V3,multi_turn_base_100,Failed to Understand User's Request,The model attempted to log in and retrieve stock information instead of funding the account with the equivalent value of 10 shares of Nvidia.,1
+DeepSeek-V3,multi_turn_base_101,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_102,Failed to Understand User's Request,"The model executed multiple actions for order placement and cancellation, leading to duplicate orders and cancellations, instead of handling the most recent order only.",1
+DeepSeek-V3,multi_turn_base_103,Failed to Understand User's Request,"The assistant sent the message twice to Jane, resulting in duplicate messages in the inbox.",4
+DeepSeek-V3,multi_turn_base_104,Failed to Understand User's Request,"The model unnecessarily called 'get_symbol_by_name' when the stock symbol 'QUAS' was already available in the initial state, leading to an extra step in the function call trace.",0
+DeepSeek-V3,multi_turn_base_105,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_106,Failed to Understand Environment State,"The model repeatedly placed multiple orders for the same stock, leading to an incorrect final state with multiple pending orders instead of just one.",0
+DeepSeek-V3,multi_turn_base_107,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_108,Failed to Understand User's Request,The model attempted to cancel an already completed order instead of the newly placed order for NVDA.,3
+DeepSeek-V3,multi_turn_base_109,Failed to Understand Function Documentation,"The model repeatedly attempted to authenticate the Twitter account before posting a tweet, despite the initial state indicating the user was already authenticated.",6
+DeepSeek-V3,multi_turn_base_110,Failed to Understand Environment State,"The model placed multiple orders instead of a single order, leading to multiple open orders in the environment state.",1
+DeepSeek-V3,multi_turn_base_111,Failed to Understand Environment State,"The model sent the message twice to Jane, resulting in duplicate messages in the inbox.",2
+DeepSeek-V3,multi_turn_base_112,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_114,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_115,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_116,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_117,Failed to Understand User's Request,The model attempted to retrieve the symbol for 'OMEG' instead of calculating the deposit amount based on its price.,5
+DeepSeek-V3,multi_turn_base_118,Failed to Understand Environment State,The model failed to identify the latest order ID (12446) and instead attempted to cancel an already completed order (12345).,4
+DeepSeek-V3,multi_turn_base_119,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_120,Failed to Understand User's Request,The assistant placed multiple orders and cancelled multiple orders instead of handling a single order as requested by the user.,1
+DeepSeek-V3,multi_turn_base_121,Failed to Understand User's Request,"The model placed two orders instead of one, leading to duplicate orders for the same stock.",1
+DeepSeek-V3,multi_turn_base_122,Failed to Understand User's Request,The model repeatedly placed multiple buy orders instead of placing a single order as requested by the user.,1
+DeepSeek-V3,multi_turn_base_123,Failed to Understand Environment State,"The model repeatedly placed multiple orders for the same request, leading to multiple open orders instead of a single one. This indicates a failure to track the environment state and recognize that the order had already been placed.",0
+DeepSeek-V3,multi_turn_base_124,Failed to Understand Environment State,"The model placed multiple orders instead of a single order, leading to multiple pending orders in the system.",1
+DeepSeek-V3,multi_turn_base_125,Failed to Understand User's Request,"The model used 'get_user_tickets()' instead of 'get_ticket(ticket_id=1)' to retrieve the specific ticket details, leading to an incorrect function call.",3
+DeepSeek-V3,multi_turn_base_126,Failed to Understand User's Request,"The model placed two orders instead of one, and attempted to cancel both orders when only one was requested to be cancelled.",1
+DeepSeek-V3,multi_turn_base_127,Failed to Understand Environment State,The model failed to place the order for BDX shares and update the order details in the environment state.,2
+DeepSeek-V3,multi_turn_base_128,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_129,Failed to Understand Environment State,"The model placed multiple orders for the same stock, leading to an incorrect final state with multiple pending orders instead of one.",1
+DeepSeek-V3,multi_turn_base_130,Failed to Understand User's Request,"The model placed two orders instead of one, leading to duplicate orders being created.",1
+DeepSeek-V3,multi_turn_base_131,Failed to Understand Function Documentation,"The model incorrectly included 'message_id' as a parameter in the 'delete_message' function call, which is not required according to the function documentation.",6
+DeepSeek-V3,multi_turn_base_132,Failed to Understand User's Request,The model unnecessarily retrieved details for both orders when only the pending order needed review for potential cancellation.,2
+DeepSeek-V3,multi_turn_base_133,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_134,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_135,Failed to Understand User's Request,"The model repeatedly attempted to add 'ZETA' to the watchlist, even though it was already present, leading to unnecessary repeated actions and eventual force-termination.",0
+DeepSeek-V3,multi_turn_base_136,Failed to Understand Environment State,"The model repeatedly placed multiple orders for the same stock, leading to multiple open orders instead of a single one.",0
+DeepSeek-V3,multi_turn_base_137,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_138,Failed to Understand Function Documentation,"The model attempted to delete a message using an incorrect parameter 'message_id', which is not required according to the function documentation.",4
+DeepSeek-V3,multi_turn_base_139,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_140,Failed to Understand User's Request,The model included placeholder text '[Please provide the specific order details here]' in the ticket description instead of extracting and including actual order details.,2
+DeepSeek-V3,multi_turn_base_141,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_142,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_143,Failed to Understand Environment State,"The model failed to log in as USR001 before attempting to send a message, resulting in an error due to no user being logged in.",3
+DeepSeek-V3,multi_turn_base_144,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_145,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_146,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_147,Failed to Understand User's Request,"The model repeatedly posted the same tweet multiple times instead of posting it once with the correct tags and mentions. Additionally, it added comments instead of updating the tweet with a new mention.",0
+DeepSeek-V3,multi_turn_base_148,Failed to Understand Environment State,"The model repeatedly placed multiple orders instead of a single order, leading to an incorrect final state with multiple pending orders.",0
+DeepSeek-V3,multi_turn_base_149,Failed to Understand Function Documentation,"The model repeatedly called 'get_stock_info' and 'get_watchlist' without removing 'ZETA' from the watchlist, failing to utilize the 'remove_stock_from_watchlist' function.",0
+DeepSeek-V3,multi_turn_base_150,Failed to Understand User's Request,"The model repeatedly called the function to get the nearest airport instead of proceeding to get the flight cost, which was the user's request.",0
+DeepSeek-V3,multi_turn_base_151,Failed to Understand Environment State,"The model failed to book the flight after estimating the cost and converting the currency, leading to a mismatch in the final state.",0
+DeepSeek-V3,multi_turn_base_152,Failed to Understand User's Request,The model attempted to verify traveler information with incorrect details (John Doe) instead of using the provided user details (Michael Thompson).,0
+DeepSeek-V3,multi_turn_base_153,Failed to Understand User's Request,"The model attempted to find the nearest airport to 'GFD', which was not requested by the user. The user only asked for a price estimate from 'RMS' to 'GFD'.",1
+DeepSeek-V3,multi_turn_base_154,Failed to Understand Environment State,"The model booked multiple flights across different classes without confirming the user's preference, leading to an incorrect final state with multiple bookings instead of one.",3
+DeepSeek-V3,multi_turn_base_155,Failed to Understand Environment State,"The model repeatedly attempted to book the flight despite insufficient funds, failing to recognize the credit card balance was insufficient for the transaction.",0
+DeepSeek-V3,multi_turn_base_156,Failed to Understand User's Request,"The model attempted to verify traveler information for 'John Doe' instead of using the provided details for 'Michael Thompson', leading to a verification failure.",0
+DeepSeek-V3,multi_turn_base_157,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_158,Failed to Understand Environment State,"The model attempted multiple bookings without checking the credit card balance and budget limit, leading to failed transactions.",1
+DeepSeek-V3,multi_turn_base_159,Failed to Understand User's Request,"The model attempted to verify traveler information instead of booking the flight directly, leading to a failure in booking the flight for Elizabeth Montgomery.",1
+DeepSeek-V3,multi_turn_base_160,Failed to Understand User's Request,"The model set the budget limit directly to 20,000 USD instead of converting 20,000 RMB to USD as requested by the user.",0
+DeepSeek-V3,multi_turn_base_161,Failed to Understand Environment State,"The model repeatedly attempted to authenticate the user, resulting in multiple access tokens being generated, but failed to use the correct access token ('251675') for subsequent operations, leading to invalid token errors.",1
+DeepSeek-V3,multi_turn_base_162,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_163,Failed to Understand Environment State,"The model repeatedly booked the same flight multiple times, failing to recognize that the booking was already completed after the first successful attempt.",0
+DeepSeek-V3,multi_turn_base_164,Failed to Understand Environment State,"The model failed to use the correct access token for booking and invoice retrieval, leading to invalid token errors.",2
+DeepSeek-V3,multi_turn_base_165,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_166,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_167,Failed to Understand Environment State,"The model failed to recognize that the access token was invalid and attempted to book a flight without re-authenticating, leading to a failed booking attempt.",2
+DeepSeek-V3,multi_turn_base_168,Failed to Understand Environment State,"The model used the wrong booking ID for subsequent actions, leading to incorrect state updates and function calls.",2
+DeepSeek-V3,multi_turn_base_169,Failed to Understand Environment State,"The model repeatedly booked the same flight multiple times, leading to multiple bookings and incorrect balance deduction.",0
+DeepSeek-V3,multi_turn_base_170,Failed to Understand Environment State,"The model attempted to book a flight without checking the available balance on the credit card, leading to an insufficient funds error.",0
+DeepSeek-V3,multi_turn_base_171,Failed to Understand Environment State,The model failed to recognize the existing booking and attempted to purchase insurance and retrieve an invoice for a non-existent booking ID.,1
+DeepSeek-V3,multi_turn_base_172,Failed to Understand Environment State,"The model repeatedly attempted to authenticate the user, resulting in multiple access tokens being generated, but failed to update the environment state with the correct access token, leading to an invalid token error in subsequent operations.",0
+DeepSeek-V3,multi_turn_base_173,Failed to Understand User's Request,The model attempted to cancel a booking instead of closing a ticket as requested by the user.,3
+DeepSeek-V3,multi_turn_base_174,Failed to Understand Environment State,"The model failed to recognize the existing booking and insurance IDs, leading to errors in booking and insurance operations.",1
+DeepSeek-V3,multi_turn_base_175,Failed to Understand Environment State,"The model repeatedly attempted to authenticate and book flights, leading to multiple bookings and incorrect access token usage, resulting in a mismatch between the final state and the ground truth.",0
+DeepSeek-V3,multi_turn_base_176,Failed to Understand Environment State,"The model repeatedly attempted to book and cancel flights without recognizing the insufficient funds issue, leading to multiple unnecessary attempts and incorrect final state.",0
+DeepSeek-V3,multi_turn_base_177,Failed to Understand User's Request,"The model repeatedly booked the same flight multiple times instead of booking it once, leading to multiple unnecessary transactions.",0
+DeepSeek-V3,multi_turn_base_178,Failed to Understand Environment State,"The model failed to correctly identify the booking ID for the insurance purchase, leading to repeated failed attempts to purchase insurance and retrieve the invoice.",0
+DeepSeek-V3,multi_turn_base_179,Failed to Understand User's Request,"The model repeatedly called the 'get_nearest_airport_by_city' function unnecessarily after successfully booking the flight, indicating a misunderstanding of the user's request to complete the task efficiently.",0
+DeepSeek-V3,multi_turn_base_180,Failed to Understand User's Request,"The model repeatedly called the compute_exchange_rate function unnecessarily, even after successfully setting the budget limit. It failed to recognize that the user's request was fulfilled after the first successful set_budget_limit call.",0
+DeepSeek-V3,multi_turn_base_181,Failed to Understand Environment State,"The model attempted to cancel multiple bookings when only one was necessary, leading to an incorrect final state.",3
+DeepSeek-V3,multi_turn_base_182,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_183,Failed to Understand Function Documentation,The model incorrectly included a mention in the tweet content instead of using the 'mentions' parameter to tag the airline.,5
+DeepSeek-V3,multi_turn_base_184,Failed to Understand Function Documentation,"The model repeatedly attempted to delete a message using a 'message_id' parameter, which is not required according to the function documentation for 'delete_message'.",5
+DeepSeek-V3,multi_turn_base_185,Failed to Understand User's Request,The model repeatedly called the 'get_flight_cost' function for multiple travel classes without considering the user's budget constraint of $2000. It should have identified the most suitable class within the budget and set the budget limit accordingly.,0
+DeepSeek-V3,multi_turn_base_186,Failed to Understand User's Request,The model sent a message to customer support that was too verbose and not aligned with the user's request for expedited assistance.,3
+DeepSeek-V3,multi_turn_base_187,Failed to Understand Environment State,"The model repeatedly attempted to purchase insurance using an incorrect booking ID ('booking_id') instead of the correct one ('insurance_12345'), leading to a failure in completing the user's request.",0
+DeepSeek-V3,multi_turn_base_188,Failed to Understand Environment State,"The model repeatedly attempted to authenticate the Twitter account despite the user already being authenticated, leading to unnecessary authentication attempts and incorrect state updates.",4
+DeepSeek-V3,multi_turn_base_189,Failed to Understand Environment State,"The model repeatedly booked the same flight multiple times, reducing the credit card balance unnecessarily.",0
+DeepSeek-V3,multi_turn_base_190,Failed to Understand Environment State,"The model repeatedly attempted to book a flight despite insufficient funds, failing to recognize the environment state where the credit card balance was insufficient for the transaction.",0
+DeepSeek-V3,multi_turn_base_191,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_192,No Failure,No Failure Occurs,-1
+DeepSeek-V3,multi_turn_base_193,Failed to Understand Environment State,"The model repeatedly used an expired access token for authentication and booking, leading to failed operations.",1
+DeepSeek-V3,multi_turn_base_194,Failed to Understand Environment State,"The model attempted to retrieve an invoice for a non-existent insurance ID, leading to an unnecessary error.",3
+DeepSeek-V3,multi_turn_base_195,Failed to Understand Environment State,"The model repeatedly booked the same flight multiple times, failing to recognize that the flight was already booked after the first successful booking.",0
+DeepSeek-V3,multi_turn_base_196,Failed to Understand Function Documentation,"The model used 'close_ticket' instead of 'resolve_ticket' to resolve the ticket with an empty resolution string, which was not the correct function for the user's request.",4
+DeepSeek-V3,multi_turn_base_197,Failed to Understand Function Documentation,"The model repeatedly attempted to register the credit card with an incorrect expiration date format ('12/25' instead of '12/2025'), leading to multiple failed attempts to purchase insurance due to the card not being recognized as registered.",0
+DeepSeek-V3,multi_turn_base_198,Failed to Understand Environment State,"The model repeatedly booked flights without checking if the previous bookings were successfully canceled, leading to multiple bookings and incorrect final state.",0
+DeepSeek-V3,multi_turn_base_199,Failed to Understand Environment State,"The model repeatedly attempted to book a flight using an expired or invalid access token without successfully refreshing it, leading to a failure in booking the flight.",0

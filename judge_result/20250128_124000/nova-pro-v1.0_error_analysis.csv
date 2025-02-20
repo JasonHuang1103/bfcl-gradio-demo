@@ -1,0 +1,198 @@
+model,entry_id,error_reason_type,error_reason_description,error_turn_id
+nova-pro-v1.0,multi_turn_base_0,Failed to Understand Function Documentation,"The model incorrectly assumed that the 'grep', 'sort', and 'diff' tools cannot be used on PDF files, leading to inaction on user requests.",1
+nova-pro-v1.0,multi_turn_base_1,Failed to Understand Environment State,"The model attempted to use the 'grep' function on a file path that was not in the current directory, leading to an error. It failed to change the directory to 'archive' before executing the 'grep' command.",2
+nova-pro-v1.0,multi_turn_base_2,Failed to Understand Environment State,The model failed to recognize the correct directory structure and attempted to change to a non-existent 'document' directory instead of 'documents'.,0
+nova-pro-v1.0,multi_turn_base_3,Failed to Understand Environment State,"The model attempted to copy files without navigating to the correct directory first, resulting in initial errors.",1
+nova-pro-v1.0,multi_turn_base_4,Failed to Understand User's Request,"The model included unnecessary introductory text in the tweet content, which was not requested by the user.",2
+nova-pro-v1.0,multi_turn_base_5,Failed to Understand Function Documentation,The model attempted to use the 'mv' command with an incorrect path format and failed to correctly navigate to the required directory before moving the file.,0
+nova-pro-v1.0,multi_turn_base_6,Failed to Understand Function Documentation,The model failed to correctly use the 'touch' function to create a file with the specified extension and did not navigate to the correct directory before creating the file.,0
+nova-pro-v1.0,multi_turn_base_7,Failed to Understand User's Request,"The model used the 'find' function with a specific path 'academic_venture' instead of the current directory '.', missing the 'reference_goals.txt' file in the search results.",1
+nova-pro-v1.0,multi_turn_base_8,Failed to Understand User's Request,"The assistant posted an incorrect summary of the diff results on Twitter. The content of the tweet did not match the expected ground truth content, indicating a misunderstanding of the user's request to post the verbatim results of the diff.",2
+nova-pro-v1.0,multi_turn_base_9,Failed to Understand Function Documentation,"The model repeatedly attempted to use the 'cp' function with incorrect path parameters, failing to adhere to the function's requirement that no paths are allowed in the source or destination.",1
+nova-pro-v1.0,multi_turn_base_10,Failed to Understand User's Request,The model asked for the current name of the proposal document despite it being provided in the initial configuration and user request.,1
+nova-pro-v1.0,multi_turn_base_11,Failed to Understand Environment State,"The model incorrectly assumed the '/temp' directory was not accessible, leading to unnecessary exploration steps and incorrect user feedback.",0
+nova-pro-v1.0,multi_turn_base_12,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_13,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_14,Failed to Understand Environment State,"The model incorrectly assumed the path parameter for the 'find' function, leading to a discrepancy in the function call trace.",0
+nova-pro-v1.0,multi_turn_base_15,Failed to Understand User's Request,"The model used the 'tail' function without specifying the number of lines, resulting in displaying the entire file instead of just the last entry as requested by the user.",2
+nova-pro-v1.0,multi_turn_base_16,Failed to Understand Function Documentation,"The assistant incorrectly used the 'cp' function by including a path in the destination, which is not allowed according to the function documentation.",0
+nova-pro-v1.0,multi_turn_base_17,Failed to Understand User's Request,"The model attempted to send a message to 'Kelly' using the name instead of the user ID, resulting in an error. The user request implied sending the message after adding the contact, but the model did not correctly interpret the need to use the user ID for sending the message.",2
+nova-pro-v1.0,multi_turn_base_18,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_19,Failed to Understand Function Documentation,"The model failed to correctly execute the sequence of operations needed to copy and rename the file within the 'archives' directory. It did not change the directory to 'archives' before attempting to rename the file, leading to an error.",1
+nova-pro-v1.0,multi_turn_base_20,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_21,Failed to Understand Environment State,"The model failed to update the 'ProjectOverview.txt' file correctly by appending the new content instead of replacing it, leading to a mismatch with the ground truth state.",0
+nova-pro-v1.0,multi_turn_base_22,Failed to Understand Function Documentation,"The model unnecessarily created a copy of the file before moving it to the destination folder, instead of directly copying it to the destination.",1
+nova-pro-v1.0,multi_turn_base_23,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_24,Failed to Understand Function Documentation,"The model attempted to use a path in the 'mv' command's destination parameter, which is not supported according to the function documentation.",1
+nova-pro-v1.0,multi_turn_base_25,Failed to Understand Environment State,"The model did not change the directory to 'Research2023' before sorting 'summary.txt', leading to sorting the wrong file.",2
+nova-pro-v1.0,multi_turn_base_26,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_27,Failed to Understand Environment State,"The model attempted to rename a file without navigating to the correct directory first, leading to a failure in finding the file.",0
+nova-pro-v1.0,multi_turn_base_28,Failed to Understand Environment State,"The model failed to navigate to the correct directory before attempting to access the file, leading to repeated errors in accessing the file contents.",0
+nova-pro-v1.0,multi_turn_base_29,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_30,Failed to Understand Function Documentation,"The model failed to use the 'cat' function to read the contents of the 'test_results.json' file after navigating to the correct directory, leading to an incorrect conclusion that no JSON files were present.",0
+nova-pro-v1.0,multi_turn_base_31,Failed to Understand Function Documentation,"The model used the 'find' function to locate 'data.txt' instead of directly using 'cat' to read its contents, which was unnecessary and not part of the minimum required trajectory.",0
+nova-pro-v1.0,multi_turn_base_32,Failed to Understand Function Documentation,"The model failed to create the 'result.txt' file before attempting to write the logarithm result into it, leading to a mismatch in the final state.",1
+nova-pro-v1.0,multi_turn_base_33,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_34,Failed to Understand Environment State,"The model did not verify the existence of 'statistics.txt' before writing to it, missing the 'touch' function call to create the file.",1
+nova-pro-v1.0,multi_turn_base_35,Failed to Understand Function Documentation,"The model attempted to use file paths in the 'tail', 'cat', and 'diff' commands, which only accept file names from the current directory, leading to errors.",0
+nova-pro-v1.0,multi_turn_base_36,Failed to Understand Function Documentation,"The model repeatedly attempted to use paths in the 'cp' command's destination parameter, which is not allowed according to the function documentation.",1
+nova-pro-v1.0,multi_turn_base_37,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_38,Failed to Understand Environment State,"The model attempted to remove the 'SuperResearch' directory while still being inside it, leading to repeated errors and failure to achieve the desired end state.",0
+nova-pro-v1.0,multi_turn_base_39,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_40,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_41,Failed to Understand User's Request,"The model removed the 'notes' file from the file system instead of deleting the message sent to Bob, as requested by the user.",1
+nova-pro-v1.0,multi_turn_base_42,Failed to Understand Environment State,"The model incorrectly assumed the 'Lectures' directory did not exist, leading to unnecessary error handling and failure to execute the correct function calls.",0
+nova-pro-v1.0,multi_turn_base_43,Failed to Understand Function Documentation,"The model failed to use the correct sequence of commands to access the file content. It attempted to use the 'cat' command directly on a file in a subdirectory without changing directories first, leading to an error.",2
+nova-pro-v1.0,multi_turn_base_44,Failed to Understand Environment State,"The model did not correctly navigate to the 'documents' directory before attempting to write to 'annual_report.txt', resulting in the file being created in the wrong location.",0
+nova-pro-v1.0,multi_turn_base_45,Failed to Understand Function Documentation,"The model unnecessarily used the 'cd' command before using 'find', which was not required as 'find' can directly search within a specified path.",0
+nova-pro-v1.0,multi_turn_base_46,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_47,Failed to Understand User's Request,The model executed the 'cat' command to read the file content when the user only requested to find the file using 'find'.,0
+nova-pro-v1.0,multi_turn_base_48,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_49,Failed to Understand Environment State,"The model attempted to change to a non-existent 'temp' directory, indicating a misunderstanding of the current directory structure.",0
+nova-pro-v1.0,multi_turn_base_50,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_51,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_52,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_53,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_54,Failed to Understand User's Request,"The model asked for the tweet ID to retweet, even though the tweet about tire maintenance was already present in the initial state with ID 4.",2
+nova-pro-v1.0,multi_turn_base_55,Failed to Understand Environment State,"The model added an incorrect amount of fuel without checking the current fuel level, leading to a discrepancy in the final fuel level state.",0
+nova-pro-v1.0,multi_turn_base_56,Failed to Understand Environment State,"The model attempted to estimate the distance between San Francisco and Rivermist but failed to retrieve the distance due to a database error. It did not explore alternative methods to obtain the distance, such as using a different API or providing an approximate distance based on known data.",0
+nova-pro-v1.0,multi_turn_base_57,Failed to Understand Environment State,The model failed to recognize that the distance estimation was unsuccessful and proceeded to the next user request without resolving the initial issue.,1
+nova-pro-v1.0,multi_turn_base_58,Failed to Understand Environment State,"The model attempted to fill the fuel tank with 113.56 liters without checking the tank's maximum capacity, resulting in an error.",1
+nova-pro-v1.0,multi_turn_base_59,Failed to Understand Environment State,"The model attempted to fill the fuel tank with 50 gallons without considering the current fuel level, leading to an error due to exceeding tank capacity.",2
+nova-pro-v1.0,multi_turn_base_60,Failed to Understand Environment State,"The model filled the fuel tank without checking the current fuel level first, leading to an incorrect final state with a fuel level of 20 gallons instead of the expected 10 gallons.",0
+nova-pro-v1.0,multi_turn_base_61,Failed to Understand Environment State,"The model failed to assess the current fuel level and calculate the minimum fuel needed to reach Rivermist, leading to an incomplete response to the user's request.",1
+nova-pro-v1.0,multi_turn_base_62,Failed to Understand Environment State,"The model failed to send the message with the estimated distance to Bob, as the distance was not found in the database. This led to a mismatch in the final state of the MessageAPI.",0
+nova-pro-v1.0,multi_turn_base_63,Failed to Understand Function Documentation,The model failed to use the 'estimate_drive_feasibility_by_mileage' function to determine if the vehicle can reach the destination after estimating the distance.,2
+nova-pro-v1.0,multi_turn_base_64,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_65,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_66,Failed to Understand Function Documentation,"The model repeatedly attempted to set the navigation using an incorrect parameter format, providing only the street number instead of the full address string as required by the function documentation.",1
+nova-pro-v1.0,multi_turn_base_67,Failed to Understand User's Request,"The model failed to proceed with filling the fuel tank despite the user's request to fill it completely, regardless of the distance information.",2
+nova-pro-v1.0,multi_turn_base_68,Failed to Understand Function Documentation,"The model repeatedly attempted to set the navigation using an incorrect data type for the destination parameter, indicating a misunderstanding of the function documentation which requires a string format for the destination.",3
+nova-pro-v1.0,multi_turn_base_69,Failed to Understand Function Documentation,"The model failed to correctly utilize the function documentation to convert liters to gallons and fill the fuel tank. It attempted to convert gallons to liters instead, and did not proceed to fill the tank with the correct amount.",0
+nova-pro-v1.0,multi_turn_base_70,Failed to Understand Function Documentation,"The model incorrectly used 'gallon_to_liter' instead of 'liter_to_gallon' to convert the fuel amount, leading to an incorrect fuel level in the vehicle.",0
+nova-pro-v1.0,multi_turn_base_71,Failed to Understand Environment State,"The assistant attempted to fill the fuel tank with 50 gallons without considering the current fuel level of 5 gallons, exceeding the tank's capacity.",2
+nova-pro-v1.0,multi_turn_base_72,Failed to Understand User's Request,"The model did not log in the user before sending a message, which is a required step according to the ground truth function call.",3
+nova-pro-v1.0,multi_turn_base_73,Failed to Understand Function Documentation,"The model repeatedly attempted to set the navigation destination using an integer instead of a string format, leading to execution errors.",2
+nova-pro-v1.0,multi_turn_base_74,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_75,Failed to Understand Environment State,The assistant retweeted and commented on the wrong tweet ID (3) instead of the correct tweet ID (2) that contained the actual tire pressure values.,2
+nova-pro-v1.0,multi_turn_base_76,Failed to Understand Function Documentation,"The model attempted to authenticate the Twitter account unnecessarily, despite the user already being authenticated, leading to an incorrect state.",1
+nova-pro-v1.0,multi_turn_base_77,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_78,Failed to Understand User's Request,"The model incorrectly categorized the hashtag as a tag instead of a mention in the tweet, leading to a mismatch in the final state.",1
+nova-pro-v1.0,multi_turn_base_79,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_80,Failed to Understand Environment State,The model failed to recognize the current fuel level and did not fill the tank to its maximum capacity of 50 gallons.,2
+nova-pro-v1.0,multi_turn_base_81,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_82,Failed to Understand Environment State,"The model failed to correctly fill the fuel tank to its maximum capacity by not accounting for the initial fuel level, leading to an error when attempting to fill beyond capacity.",1
+nova-pro-v1.0,multi_turn_base_83,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_84,Failed to Understand User's Request,"The assistant failed to set the navigation to the nearest tire shop after identifying insufficient tire pressure, as requested by the user.",1
+nova-pro-v1.0,multi_turn_base_85,Failed to Understand Function Documentation,"The model attempted to fill the fuel tank with 50 gallons without considering the current fuel level, leading to an error due to exceeding the tank's capacity.",1
+nova-pro-v1.0,multi_turn_base_86,Failed to Understand Environment State,"The model set the navigation destination to 'nearest tire shop' instead of the specific address '456 Oakwood Avenue, Rivermist, 83214', leading to a mismatch in the final state.",1
+nova-pro-v1.0,multi_turn_base_87,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_88,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_89,Failed to Understand User's Request,"The model failed to utilize the available information about the current fuel level and attempted to ask the user for it, despite it being available in the initial state.",1
+nova-pro-v1.0,multi_turn_base_90,Failed to Understand Environment State,"The model failed to recognize that the brake pedal was not pressed at the end of Turn 0, leading to a mismatch with the ground truth state.",0
+nova-pro-v1.0,multi_turn_base_91,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_92,Failed to Understand Function Documentation,"The model failed to utilize the 'fillFuelTank' function to fill the fuel tank completely, despite having the current fuel level information available in the initial state.",2
+nova-pro-v1.0,multi_turn_base_93,Failed to Understand Environment State,"The model did not check the current fuel level before attempting to fill the tank, leading to an unnecessary fill operation.",0
+nova-pro-v1.0,multi_turn_base_94,Failed to Understand Function Documentation,"The model failed to correctly format the destination parameter for the set_navigation function, leading to an execution error.",1
+nova-pro-v1.0,multi_turn_base_95,Failed to Understand Environment State,"The model failed to send the message to Emma with the estimated distance because it did not store or retrieve the computed distance value correctly, leading to an inability to fulfill the user's request.",3
+nova-pro-v1.0,multi_turn_base_96,Failed to Understand Function Documentation,"The model incorrectly used integer values for city zip codes in the 'estimate_distance' function call instead of string values, leading to an error.",1
+nova-pro-v1.0,multi_turn_base_97,Failed to Understand Environment State,"The model attempted to fill the fuel tank to its maximum capacity without considering the current fuel level, resulting in an error due to exceeding the tank's capacity.",2
+nova-pro-v1.0,multi_turn_base_98,Failed to Understand Function Documentation,"The model incorrectly used integer values for city zip codes instead of strings when calling the 'estimate_distance' function, leading to an error.",2
+nova-pro-v1.0,multi_turn_base_99,Failed to Understand Environment State,The model did not update the destination to the nearest tire shop after identifying the need to visit due to low tire pressure.,3
+nova-pro-v1.0,multi_turn_base_101,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_102,Failed to Understand User's Request,"The model failed to execute the user's request to place an order for Tesla shares at $700 per share, instead it checked the current price and asked for confirmation, which was not required by the user.",1
+nova-pro-v1.0,multi_turn_base_103,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_104,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_105,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_106,Failed to Understand Environment State,The model failed to recognize that the ticket ID was already available in the initial state and did not need to ask the user for it.,2
+nova-pro-v1.0,multi_turn_base_107,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_108,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_109,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_110,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_111,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_112,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_113,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_114,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_115,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_116,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_118,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_119,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_120,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_121,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_122,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_123,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_124,Failed to Understand User's Request,"The model did not proceed to place the order after confirming the stock price and total cost with the user, which was the user's request.",1
+nova-pro-v1.0,multi_turn_base_125,Failed to Understand Environment State,"The model failed to recognize that the user 'Josephine' was not the current user in the ticketing system, leading to incorrect assumptions about ticket ownership.",3
+nova-pro-v1.0,multi_turn_base_126,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_127,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_128,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_129,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_130,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_131,Failed to Understand Function Documentation,"The model attempted to delete a message using an incorrect parameter 'message_id', which is not required by the 'delete_message' function.",6
+nova-pro-v1.0,multi_turn_base_132,Failed to Understand Environment State,The model failed to utilize the available order details from the initial state to review the order without asking for the order ID.,2
+nova-pro-v1.0,multi_turn_base_133,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_134,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_135,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_136,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_137,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_138,Failed to Understand Function Documentation,"The model attempted to delete a message using a message ID, which is not supported by the MessageAPI's delete_message function. The function only requires the receiver_id parameter.",4
+nova-pro-v1.0,multi_turn_base_139,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_140,Failed to Understand User's Request,"The model failed to create a ticket with the provided details and priority, instead asking for order details which were not necessary for the ticket creation.",2
+nova-pro-v1.0,multi_turn_base_141,Failed to Understand Environment State,"The model did not call the 'get_order_details' function to retrieve the transaction details for the order just made, relying instead on previously known information without confirming the current state.",3
+nova-pro-v1.0,multi_turn_base_142,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_143,Failed to Understand Environment State,The model failed to recognize that the order ID 12446 was the one with a substantial order value and should have been retrieved and canceled without asking the user for the order ID.,1
+nova-pro-v1.0,multi_turn_base_144,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_145,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_146,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_147,Failed to Understand Function Documentation,The model reposted the tweet with an additional mention instead of using the 'mention' function to update the existing tweet.,1
+nova-pro-v1.0,multi_turn_base_148,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_149,Failed to Understand Function Documentation,"The model attempted to use the 'delete_message' function with a 'message_id' parameter, which is not supported by the function's documentation.",4
+nova-pro-v1.0,multi_turn_base_150,Failed to Understand Environment State,"The model attempted to find the nearest airports for Rivermist and Stonebrook, but the ground truth indicates that the airport codes should have been directly used in the get_flight_cost function call.",0
+nova-pro-v1.0,multi_turn_base_151,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_152,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_153,Failed to Understand User's Request,"The model failed to correctly use the nearest airport code 'RMS' in the `get_flight_cost` function call, resulting in an error due to an empty 'travel_from' field.",1
+nova-pro-v1.0,multi_turn_base_154,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_155,Failed to Understand Function Documentation,"The model did not call the 'get_flight_cost' function to verify the cost of the flight before booking, which is part of the minimum required trajectory.",0
+nova-pro-v1.0,multi_turn_base_156,Failed to Understand Environment State,"The model failed to recognize that the booking was not completed in Turn 0, leading to incorrect assumptions in subsequent turns.",0
+nova-pro-v1.0,multi_turn_base_157,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_158,Failed to Understand Function Documentation,"The model failed to retrieve the flight cost before booking, resulting in a booking with a travel cost of 0.0 instead of the actual cost.",1
+nova-pro-v1.0,multi_turn_base_159,Failed to Understand User's Request,"The model used the incorrect travel cost of $440.0 instead of the expected $400.0 for booking the flight, leading to a discrepancy in the final state balance.",1
+nova-pro-v1.0,multi_turn_base_160,Failed to Understand User's Request,"The model booked the flight at a cost of $2300, exceeding the user's specified budget of $2280.",1
+nova-pro-v1.0,multi_turn_base_161,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_162,Failed to Understand Function Documentation,"The model attempted to compute an exchange rate using an incorrect currency code 'RMS' instead of 'RMB', leading to an error in the exchange rate computation.",3
+nova-pro-v1.0,multi_turn_base_163,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_164,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_165,Failed to Understand Environment State,The model failed to utilize the existing booking ID from the environment state to retrieve the invoice and contact customer support.,3
+nova-pro-v1.0,multi_turn_base_166,Failed to Understand User's Request,The model attempted to verify traveler information instead of proceeding with the flight booking using the provided access token and credit card details.,2
+nova-pro-v1.0,multi_turn_base_167,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_168,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_169,Failed to Understand User's Request,The model attempted to verify traveler information and retrieve the nearest airports instead of directly booking the flight as requested by the user.,0
+nova-pro-v1.0,multi_turn_base_170,Failed to Understand Environment State,"The model failed to retrieve the flight cost before booking, resulting in a booking with a travel cost of $0.0 instead of the expected $2000.0, leading to a mismatch in the final state.",0
+nova-pro-v1.0,multi_turn_base_171,Failed to Understand Function Documentation,"The model incorrectly used the 'compute_exchange_rate' function with the wrong base and target currencies, leading to an incorrect budget conversion. Additionally, it failed to set the budget limit and did not retrieve the correct flight cost before booking.",0
+nova-pro-v1.0,multi_turn_base_172,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_173,Failed to Understand User's Request,"The model attempted to cancel a booking instead of closing a ticket, misunderstanding the user's request to cancel the unnecessary ticket linked to the booking.",3
+nova-pro-v1.0,multi_turn_base_174,Failed to Understand Environment State,"The model incorrectly computed the travel cost in EUR and booked the flight with an incorrect cost, leading to a mismatch in the final state balance.",0
+nova-pro-v1.0,multi_turn_base_175,Failed to Understand Function Documentation,"The model did not retrieve the flight cost before booking, leading to a discrepancy in the travel cost charged.",0
+nova-pro-v1.0,multi_turn_base_176,Failed to Understand User's Request,"The assistant created a support ticket with the wrong date in the description. The user requested a ticket for a flight cancellation on December 15, 2023, but the assistant used December 15, 2024, instead.",1
+nova-pro-v1.0,multi_turn_base_177,Failed to Understand Environment State,"The model booked the flight to the wrong airport code (NRT instead of HND) for Tokyo, which led to a mismatch in the environment state.",0
+nova-pro-v1.0,multi_turn_base_178,Failed to Understand User's Request,The model failed to proceed with the cancellation of the booking despite having the necessary information in the environment state.,4
+nova-pro-v1.0,multi_turn_base_179,Failed to Understand Function Documentation,The model used incorrect airport codes ('Crescent Hollow' and 'New York') instead of IATA codes ('CRH' and 'JFK') for the flight booking function.,0
+nova-pro-v1.0,multi_turn_base_180,Failed to Understand Environment State,"The model failed to recognize that the credit card was already registered and incorrectly assumed it was not, leading to a failed booking attempt.",1
+nova-pro-v1.0,multi_turn_base_181,Failed to Understand Environment State,"The model incorrectly set the priority of the ticket to 5 instead of the default 1, which was not specified by the user.",4
+nova-pro-v1.0,multi_turn_base_182,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_183,Failed to Understand Environment State,"The model incorrectly included a mention in the tweet, which was not part of the user's request. The ground truth state shows no mention in the tweet.",5
+nova-pro-v1.0,multi_turn_base_185,Failed to Understand Function Documentation,"The model did not set the budget limit using the 'set_budget_limit' function, which was part of the ground truth trajectory for Turn 0.",0
+nova-pro-v1.0,multi_turn_base_186,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_187,Failed to Understand Environment State,"The model failed to use the correct booking ID from the environment state when attempting to purchase insurance, leading to a failed transaction.",0
+nova-pro-v1.0,multi_turn_base_188,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_189,Failed to Understand Function Documentation,"The model failed to retrieve the flight cost before booking, leading to an incorrect booking cost of $0.0 instead of the expected $4000.0.",0
+nova-pro-v1.0,multi_turn_base_190,Failed to Understand Environment State,"The model failed to correctly interpret the environment state, leading to incorrect assumptions about the travel cost and booking details, resulting in a mismatch between the model's final state and the ground truth state.",0
+nova-pro-v1.0,multi_turn_base_191,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_192,No Failure,No Failure Occurs,-1
+nova-pro-v1.0,multi_turn_base_193,Failed to Understand Environment State,"The model used an expired access token for the cancel_booking function, leading to a failure in canceling the booking.",2
+nova-pro-v1.0,multi_turn_base_194,Failed to Understand Environment State,"The model incorrectly assumed that the flight booking was not confirmed due to a failed traveler information verification, despite the booking being successfully completed.",2
+nova-pro-v1.0,multi_turn_base_195,Failed to Understand Environment State,The model failed to correctly identify the nearest airport code for Rivermist and did not proceed to book the flight after obtaining the flight cost.,0
+nova-pro-v1.0,multi_turn_base_196,Failed to Understand Environment State,"The model incorrectly recalibrated the budget after canceling the flight, resulting in a budget limit that does not match the ground truth.",2
+nova-pro-v1.0,multi_turn_base_197,Failed to Understand User's Request,"The model retrieved an invoice for the flight booking instead of the insurance cost, which was the user's request.",1
+nova-pro-v1.0,multi_turn_base_198,Failed to Understand User's Request,"The model did not perform any actions to book, cancel, or tweet as requested by the user, resulting in an empty response.",0
+nova-pro-v1.0,multi_turn_base_199,Failed to Understand User's Request,"The model provided unnecessary details about the internal error during the booking process to customer support, instead of simply stating the user faced issues and needed assistance.",2

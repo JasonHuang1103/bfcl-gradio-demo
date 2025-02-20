@@ -1,0 +1,201 @@
+model,entry_id,error_reason_type,error_reason_description,error_turn_id
+gpt-4o-2024-11-20-FC,multi_turn_base_0,Failed to Understand Environment State,"The model failed to correctly identify the location of 'final_report.pdf' after moving it to the 'temp' directory within 'document', leading to incorrect assumptions about its availability in subsequent turns.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_1,Failed to Understand Environment State,"The model attempted to create a directory 'archive' that already existed, indicating a misunderstanding of the current directory structure.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_2,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_3,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_4,Failed to Understand Environment State,"The model failed to update the file content after sorting, leading to a mismatch between the expected and actual environment state.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_5,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_6,Failed to Understand Environment State,"The model did not change the directory to 'communal' before creating the file 'Annual_Report_2023.docx', resulting in the file being created in the wrong directory.",0
+gpt-4o-2024-11-20-FC,multi_turn_base_7,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_8,Failed to Understand User's Request,"The assistant posted the wrong content on Twitter. The user requested to post the verbatim results of the 'diff' command, but the assistant posted a different summary instead.",2
+gpt-4o-2024-11-20-FC,multi_turn_base_9,Failed to Understand Function Documentation,"The model attempted to use a path in the 'cp' command's destination parameter, which is not allowed according to the function documentation.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_10,Failed to Understand Environment State,"The model failed to correctly navigate the directory structure, leading to incorrect file operations and directory placements.",0
+gpt-4o-2024-11-20-FC,multi_turn_base_11,Failed to Understand Function Documentation,"The model did not separate the hashtag from the tweet content using the 'tags' parameter, resulting in an incorrect tweet format.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_12,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_13,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_14,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_15,Failed to Understand User's Request,"The model used the 'tail' function without specifying the number of lines, resulting in displaying all lines instead of just the last one.",2
+gpt-4o-2024-11-20-FC,multi_turn_base_16,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_17,Failed to Understand User's Request,"The model failed to send the report to Kelly after adding her as a contact, which was part of the user's request.",2
+gpt-4o-2024-11-20-FC,multi_turn_base_18,Failed to Understand Environment State,"The model incorrectly assumed the 'Quarter1_Reports' directory did not exist, leading to a failure in copying the text files to a new directory.",0
+gpt-4o-2024-11-20-FC,multi_turn_base_19,Failed to Understand Function Documentation,"The model incorrectly used the 'cp' function by including a path in the destination parameter, which is not allowed according to the function documentation.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_20,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_21,Failed to Understand Environment State,The model failed to update the content of 'ProjectOverview.txt' correctly. It should have appended 'To be discussed' to the existing content instead of replacing it.,0
+gpt-4o-2024-11-20-FC,multi_turn_base_22,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_23,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_24,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_25,Failed to Understand Environment State,"The model did not change the directory to 'Research2023' before sorting 'summary.txt', leading to sorting the wrong file.",2
+gpt-4o-2024-11-20-FC,multi_turn_base_26,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_27,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_28,Failed to Understand Function Documentation,"The model did not use the 'touch' function to create the 'usage.txt' file before writing to it, which is required to ensure the file exists.",2
+gpt-4o-2024-11-20-FC,multi_turn_base_29,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_30,Failed to Understand Environment State,"The model failed to locate the 'test_results.json' file in the 'project' directory, leading to an incorrect assumption that the file did not exist.",0
+gpt-4o-2024-11-20-FC,multi_turn_base_31,Failed to Understand Environment State,The model did not update the environment state correctly by leaving 'summary.doc' in the root directory after copying it to 'Reports'. It should have moved the file instead of copying it.,0
+gpt-4o-2024-11-20-FC,multi_turn_base_32,Failed to Understand Function Documentation,"The model did not create the file 'result.txt' before attempting to write to it, missing the 'touch' function call.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_33,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_34,Failed to Understand Environment State,"The model did not verify the contents of 'finance_report.txt' before calculating the mean, assuming the values were known without reading the file.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_35,Failed to Understand Function Documentation,"The model did not create the file 'diff.txt' before writing to it, which is required according to the function documentation.",2
+gpt-4o-2024-11-20-FC,multi_turn_base_36,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_37,Failed to Understand Environment State,"The model attempted to change to a non-existent directory 'temp', failing to recognize that it was already in the correct directory and should have directly counted lines in 'dev_summary.txt'.",0
+gpt-4o-2024-11-20-FC,multi_turn_base_38,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_39,Failed to Understand Function Documentation,"The model did not use the 'touch' function to create files before writing content with 'echo', leading to a discrepancy in the function call trajectory.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_40,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_41,Failed to Understand Function Documentation,"The model attempted to use the 'delete_message' function with an incorrect parameter 'message_id', which is not supported by the function documentation.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_42,Failed to Understand Environment State,The model attempted to change to a non-existent directory 'Lectures' instead of directly creating the file 'Notes2023.txt' in the existing root directory.,0
+gpt-4o-2024-11-20-FC,multi_turn_base_43,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_44,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_45,Failed to Understand Environment State,"The model attempted to copy a file using an incorrect path, assuming a nested directory structure that did not exist.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_46,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_47,Failed to Understand User's Request,The model used the 'find' function with an incorrect name parameter ('student record') instead of searching for all files in the directory to identify 'student_record.txt'.,0
+gpt-4o-2024-11-20-FC,multi_turn_base_48,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_49,Failed to Understand Environment State,"The model attempted to change to a non-existent directory 'temp' instead of listing the contents directly, leading to an unnecessary error.",0
+gpt-4o-2024-11-20-FC,multi_turn_base_50,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_51,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_52,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_53,Failed to Understand Environment State,"The model attempted to start the engine without ensuring all doors were locked, which is a prerequisite for starting the engine.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_54,Failed to Understand Environment State,"The model attempted to start the engine without locking the doors first, which is a prerequisite for starting the engine.",0
+gpt-4o-2024-11-20-FC,multi_turn_base_55,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_56,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_57,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_58,Failed to Understand Environment State,"The model failed to fill the fuel tank to the required level before starting the engine, resulting in a mismatch between the final and ground truth states.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_59,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_60,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_61,Failed to Understand Environment State,"The model attempted to fill the fuel tank with an incorrect amount, exceeding the tank's capacity, without first checking the current fuel level and calculating the required amount to reach the destination.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_62,Failed to Understand Function Documentation,"The model unnecessarily called 'list_users' and 'get_user_id' functions to retrieve Bob's user ID, which was already available in the initial state configuration.",0
+gpt-4o-2024-11-20-FC,multi_turn_base_63,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_64,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_65,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_66,Failed to Understand Environment State,"The model filled the tank to maximum capacity without considering the current fuel level, resulting in an overfill beyond the user's request.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_67,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_68,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_69,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_70,Failed to Understand User's Request,The model failed to set navigation to the nearest tire shop after identifying the need to inflate the rear tires.,1
+gpt-4o-2024-11-20-FC,multi_turn_base_71,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_72,Failed to Understand User's Request,"The model did not log in the user before sending a message, which is a required step according to the function documentation.",3
+gpt-4o-2024-11-20-FC,multi_turn_base_73,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_74,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_75,Failed to Understand Environment State,"The model posted the tire pressure values with decimal points, which was not aligned with the ground truth state that required integer values.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_76,Failed to Understand Environment State,"The model failed to press the brake pedal before attempting to start the engine, which is a necessary step according to the environment state.",0
+gpt-4o-2024-11-20-FC,multi_turn_base_77,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_78,Failed to Understand Function Documentation,"The model incorrectly used the 'tags' parameter instead of 'mentions' for the hashtag in the tweet, leading to a mismatch in the final state.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_79,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_80,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_81,Failed to Understand Environment State,"The model attempted to start the engine without locking the doors first, which is a prerequisite for starting the engine.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_82,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_83,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_84,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_85,Failed to Understand User's Request,The assistant failed to check if the current fuel level was sufficient to cover the distance before proceeding to the next user request.,0
+gpt-4o-2024-11-20-FC,multi_turn_base_86,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_87,Failed to Understand Environment State,"The model attempted to start the engine without ensuring all doors were locked first, leading to an error. It also failed to press the brake pedal before starting the engine, which is required.",2
+gpt-4o-2024-11-20-FC,multi_turn_base_88,Failed to Understand Environment State,"The model attempted to start the engine without pressing the brake pedal, which is a requirement for starting the engine.",2
+gpt-4o-2024-11-20-FC,multi_turn_base_89,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_90,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_91,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_92,Failed to Understand Environment State,The model failed to update the destination to the nearest tire shop after identifying the tire pressure issue.,4
+gpt-4o-2024-11-20-FC,multi_turn_base_93,Failed to Understand Function Documentation,"The model attempted to start the engine without locking the doors first, which is a prerequisite according to the function documentation.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_94,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_95,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_96,Failed to Understand Function Documentation,"The model failed to press the brake pedal before attempting to start the engine, which is a requirement according to the function documentation.",0
+gpt-4o-2024-11-20-FC,multi_turn_base_97,Failed to Understand User's Request,"The model failed to initiate the necessary function calls to estimate the distance between Rivermist and Stonebrook, despite the user's request for this information.",0
+gpt-4o-2024-11-20-FC,multi_turn_base_98,Failed to Understand User's Request,The model locked only the rear left door instead of ensuring all doors were locked as requested by the user.,0
+gpt-4o-2024-11-20-FC,multi_turn_base_99,Failed to Understand Environment State,The model did not update the destination to the nearest tire shop after identifying the tire pressure was below the user's preferred threshold.,3
+gpt-4o-2024-11-20-FC,multi_turn_base_100,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_101,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_102,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_103,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_104,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_105,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_106,Failed to Understand Environment State,"The model failed to retrieve the correct ticket information by not using the correct function call to access the specific ticket ID, leading to an incorrect assumption that no tickets were associated with the user.",2
+gpt-4o-2024-11-20-FC,multi_turn_base_107,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_108,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_109,Failed to Understand Function Documentation,"The model added tags to the tweet when the user did not request any tags, deviating from the ground truth function call.",6
+gpt-4o-2024-11-20-FC,multi_turn_base_110,Failed to Understand Environment State,The model failed to update the ticket_counter in the TicketAPI state after creating a new ticket.,5
+gpt-4o-2024-11-20-FC,multi_turn_base_111,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_112,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_113,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_114,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_115,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_116,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_117,Failed to Understand Environment State,The model attempted to find the symbol for 'OMEG' instead of calculating the deposit amount based on the known stock price.,5
+gpt-4o-2024-11-20-FC,multi_turn_base_118,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_119,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_120,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_121,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_122,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_123,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_124,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_125,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_126,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_127,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_128,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_129,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_130,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_131,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_132,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_133,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_134,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_135,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_136,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_137,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_138,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_139,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_140,Failed to Understand User's Request,"The model unnecessarily retrieved order details when creating a ticket, despite the user only requesting a concise case summary.",2
+gpt-4o-2024-11-20-FC,multi_turn_base_141,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_142,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_143,Failed to Understand User's Request,The model unnecessarily retrieved the stock symbol for Zeta Corp when it was already known and directly available in the initial state.,0
+gpt-4o-2024-11-20-FC,multi_turn_base_144,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_145,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_146,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_147,Failed to Understand User's Request,"The model failed to include the '@' symbol when mentioning '@technewsworld' in the tweet, leading to an incorrect mention format.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_148,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_149,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_150,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_151,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_152,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_153,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_154,Failed to Understand User's Request,"The model used the 'search_messages' function instead of 'view_messages_sent' to retrieve recent messages sent by the user, which led to an incorrect response.",4
+gpt-4o-2024-11-20-FC,multi_turn_base_155,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_156,Failed to Understand User's Request,"The model updated only the status of the ticket to 'Urgent' without changing the priority to 5, which was implied by the user's request to reflect the highest priority.",4
+gpt-4o-2024-11-20-FC,multi_turn_base_157,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_158,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_159,Failed to Understand Environment State,"The model used an incorrect travel cost of $440 for booking the flight from SFO to LAX, leading to an incorrect balance deduction.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_160,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_161,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_162,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_163,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_164,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_165,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_166,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_167,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_168,Failed to Understand Environment State,"The model failed to recognize that 'travel_advisor' is already a known user ID in the environment state and attempted to retrieve it unnecessarily, leading to an error.",4
+gpt-4o-2024-11-20-FC,multi_turn_base_169,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_170,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_171,Failed to Understand Environment State,"The model failed to recognize 'travel_agent' as a valid user ID in the workspace, despite it being present in the initial configuration.",2
+gpt-4o-2024-11-20-FC,multi_turn_base_172,Failed to Understand User's Request,The model attempted to retrieve the user ID for 'm0llyTr@vel2k24' instead of directly sending the message as requested by the user.,2
+gpt-4o-2024-11-20-FC,multi_turn_base_173,Failed to Understand Environment State,"The model attempted to retrieve user tickets without checking the current authentication status, leading to an error when trying to cancel the ticket.",3
+gpt-4o-2024-11-20-FC,multi_turn_base_174,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_175,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_176,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_177,Failed to Understand User's Request,The model did not retrieve the invoice or booking details for verification as requested by the user.,1
+gpt-4o-2024-11-20-FC,multi_turn_base_178,Failed to Understand Environment State,"The model failed to recognize the existing booking ID 'flight_001' and incorrectly assumed a new booking ID 'Rome-NewYork', leading to a failure in purchasing insurance.",0
+gpt-4o-2024-11-20-FC,multi_turn_base_179,Failed to Understand Function Documentation,The model used incorrect airport codes ('Crescent Hollow' and 'New York') instead of IATA codes ('CRH' and 'JFK') for the flight booking function call.,0
+gpt-4o-2024-11-20-FC,multi_turn_base_180,Failed to Understand Environment State,"The model failed to recognize that the main credit card was already available and attempted to register it again, leading to an unnecessary registration and incorrect booking record.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_181,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_182,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_183,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_184,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_185,Failed to Understand User's Request,The model retrieved the flight cost for economy class instead of business class as requested by the user.,0
+gpt-4o-2024-11-20-FC,multi_turn_base_186,Failed to Understand User's Request,"The model contacted customer support with a generic message instead of emphasizing the lack of feedback on the user's previous inquiry, as requested.",3
+gpt-4o-2024-11-20-FC,multi_turn_base_187,Failed to Understand User's Request,"The model failed to use the provided booking_id 'insurance_12345' for purchasing insurance, leading to an incomplete action.",0
+gpt-4o-2024-11-20-FC,multi_turn_base_188,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_189,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_190,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_191,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_192,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_193,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_194,Failed to Understand Environment State,"The model failed to maintain the correct access token and booking ID throughout the conversation, leading to incorrect function calls and state mismatches.",0
+gpt-4o-2024-11-20-FC,multi_turn_base_195,No Failure,No Failure Occurs,-1
+gpt-4o-2024-11-20-FC,multi_turn_base_196,Failed to Understand Environment State,"The model incorrectly recalibrated the budget after canceling the flight, resulting in an incorrect budget limit.",2
+gpt-4o-2024-11-20-FC,multi_turn_base_197,Failed to Understand Function Documentation,"The model incorrectly used the 'insurance_id' instead of the 'booking_id' when attempting to retrieve the invoice, leading to a 'Booking not found' error.",1
+gpt-4o-2024-11-20-FC,multi_turn_base_198,Failed to Understand Environment State,"The model used a newly generated access token instead of the provided 'abc123token' for booking and canceling the flight, leading to a mismatch in the final state.",0
+gpt-4o-2024-11-20-FC,multi_turn_base_199,Failed to Understand User's Request,"The model contacted customer support for issues during the booking process, but the user did not specify any issues. The assistant should have confirmed the user's request before proceeding.",2

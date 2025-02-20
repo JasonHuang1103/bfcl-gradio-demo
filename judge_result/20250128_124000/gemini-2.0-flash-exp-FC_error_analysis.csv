@@ -1,0 +1,201 @@
+model,entry_id,error_reason_type,error_reason_description,error_turn_id
+gemini-2.0-flash-exp-FC,multi_turn_base_0,Failed to Understand Environment State,"The model failed to navigate to the correct directory before attempting to move files, leading to errors in file operations.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_1,Failed to Understand User's Request,The model failed to execute the move operation for 'log.txt' into the 'archive' directory after changing to the 'workspace' directory.,1
+gemini-2.0-flash-exp-FC,multi_turn_base_2,Failed to Understand Environment State,"The model attempted to change to a non-existent directory 'document' instead of 'documents', leading to failure in creating 'TeamNotes.txt'.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_3,Failed to Understand Environment State,"The model initially attempted to copy files using incorrect paths without changing to the correct directory first, resulting in errors. It failed to recognize the need to navigate to the correct directory before performing the copy operation.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_4,Failed to Understand Function Documentation,"The model attempted to change directories using a path, which is not allowed according to the function documentation. It should have used the 'ls' function with the 'a' parameter to list all files, including hidden ones, in the current directory.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_5,Failed to Understand Environment State,"The model attempted to move the file 'analysis_report.csv' without first navigating to the correct directory, resulting in an error. It also created an unnecessary 'archive' directory at the root level.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_6,Failed to Understand Function Documentation,"The model incorrectly assumed it could not handle files with the '.docx' extension, leading to a failure in executing the required file operations.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_7,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_8,Failed to Understand Environment State,The model posted the diff results as a new tweet instead of adding a comment to the existing tweet as requested by the user.,3
+gemini-2.0-flash-exp-FC,multi_turn_base_9,Failed to Understand Environment State,"The model repeatedly attempted to copy the file using incorrect paths and failed to recognize the correct directory structure, leading to multiple errors and ultimately failing to achieve the desired file copy and rename operation.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_10,Failed to Understand Environment State,"The model did not navigate to the 'workspace' directory before creating the 'Projects' directory, resulting in incorrect directory hierarchy.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_11,Failed to Understand Environment State,"The model incorrectly assumed it could not access the '/temp' directory, despite it being the current directory in the GorillaFileSystem state.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_12,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_13,Failed to Understand User's Request,"The model unnecessarily listed the directory contents before identifying the alphabetically first file, which was not required by the user's request.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_14,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_15,Failed to Understand User's Request,"The model incorrectly averaged the counts of lines, words, and characters instead of computing the average of the numerical values in the file.",4
+gemini-2.0-flash-exp-FC,multi_turn_base_16,Failed to Understand Function Documentation,"The assistant repeatedly attempted to move a file using a path in the destination, which is not supported by the 'mv' function documentation.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_17,Failed to Understand User's Request,"The model failed to identify the correct file name 'test_report.docx' for Kelly's test report and used an incorrect search term, leading to an inability to find the file.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_18,Failed to Understand Function Documentation,The model failed to utilize the available functions to copy files and create a new directory as per the user's request.,0
+gemini-2.0-flash-exp-FC,multi_turn_base_19,Failed to Understand Function Documentation,"The model repeatedly attempted to use the 'mv' and 'cp' functions incorrectly by including paths in the destination, which is not allowed according to the function documentation.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_20,Failed to Understand User's Request,The model failed to interpret the user's request to navigate to the 'documents' folder and read the last line of the first file without needing explicit file names.,0
+gemini-2.0-flash-exp-FC,multi_turn_base_21,Failed to Understand User's Request,The model attempted to copy 'ProjectOverview.txt' into 'Draft.txt' instead of ensuring they are identical by comparing their contents.,1
+gemini-2.0-flash-exp-FC,multi_turn_base_22,Failed to Understand Environment State,"The model attempted to access files without navigating to the correct directory first, leading to errors in file operations.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_23,Failed to Understand Function Documentation,"The model did not use the 'touch' function to create the file before writing content to it, which is required as per the function documentation.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_24,Failed to Understand User's Request,The model attempted to find files by searching for 'draft report' and 'final report' instead of directly comparing 'report_draft.txt' and 'report_final.txt'.,0
+gemini-2.0-flash-exp-FC,multi_turn_base_25,Failed to Understand Environment State,"The model did not change the directory to 'Research2023' before sorting 'summary.txt', leading to sorting the wrong file.",2
+gemini-2.0-flash-exp-FC,multi_turn_base_26,Failed to Understand User's Request,"The assistant failed to navigate to the 'tmp' directory and list its contents, including hidden files, as requested by the user.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_27,Failed to Understand Environment State,"The model attempted to rename a file without changing to the correct directory first, resulting in a failure to locate the file.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_28,Failed to Understand Function Documentation,"The model did not use the 'human_readable' parameter correctly in the 'du' function call, leading to incorrect disk usage format.",2
+gemini-2.0-flash-exp-FC,multi_turn_base_29,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_30,Failed to Understand Environment State,"The model failed to locate the 'test_results.json' file in the 'project' directory due to incorrect usage of the 'find' function, leading to an inability to fulfill the user's request.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_31,Failed to Understand Function Documentation,"The model used the 'cp' function to copy 'summary.doc' instead of using 'mv' to move it, resulting in the file remaining in the original directory.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_32,Failed to Understand Function Documentation,"The model did not use the 'touch' function to create 'result.txt' before writing to it, which is required as per the function documentation.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_33,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_34,Failed to Understand Function Documentation,"The model attempted to use the 'echo' function to read the content of 'finance_report.txt' instead of using the 'cat' function, which is designed for displaying file contents.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_35,Failed to Understand Environment State,"The model repeatedly attempted to access the file using incorrect paths, failing to recognize the correct directory structure and current working directory.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_36,Failed to Understand Function Documentation,"The model failed to utilize the 'cd' function to navigate to the 'documents' directory before attempting to create the 'project_summary.txt' file, resulting in an inability to create the file in the specified directory.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_37,Failed to Understand Environment State,"The model attempted to change to a non-existent directory 'temp', failing to recognize that 'temp' is the current directory and should have directly counted lines in 'dev_summary.txt'.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_38,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_39,Failed to Understand Function Documentation,"The model did not use the 'touch' function to create files before writing content with 'echo', which is required to ensure the files exist.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_40,Failed to Understand Environment State,"The model failed to recognize that the file 'Q4_summary.doc' was located in the 'Documents' directory and not in the current directory, leading to an incorrect file path assumption.",2
+gemini-2.0-flash-exp-FC,multi_turn_base_41,Failed to Understand User's Request,The model failed to forward the notes to Bob and did not delete the message as requested by the user.,0
+gemini-2.0-flash-exp-FC,multi_turn_base_42,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_43,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_44,Failed to Understand Environment State,"The model did not navigate to the 'documents' directory before writing to 'annual_report.txt', resulting in the file being created in the wrong directory.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_45,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_46,Failed to Understand Function Documentation,"The model used 'rm' to remove the 'Drafts' directory directly without first removing its contents, which is required by the function documentation.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_47,Failed to Understand User's Request,The model failed to execute the 'find' command to locate the student record file as requested by the user.,0
+gemini-2.0-flash-exp-FC,multi_turn_base_48,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_49,Failed to Understand User's Request,The model misinterpreted the user's request to list files in the current directory and attempted to change directories instead.,0
+gemini-2.0-flash-exp-FC,multi_turn_base_50,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_51,Failed to Understand Environment State,"The model failed to lock the doors before attempting to start the engine, which is a prerequisite for starting the engine.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_52,Failed to Understand Environment State,"The model failed to press the brake pedal before attempting to start the engine, which is a prerequisite for starting the engine.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_53,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_54,Failed to Understand Environment State,"The model incorrectly assessed the tire pressure as 'healthy' when the rear tires were below the healthy range, leading to an incorrect tweet content.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_55,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_56,Failed to Understand User's Request,"The model failed to initiate the correct sequence of actions to determine the distance between San Francisco and Rivermist, as requested by the user.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_57,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_58,Failed to Understand Environment State,"The model failed to fill the fuel tank to the required level, leaving it empty, which is inconsistent with the user's request to ensure the tank is full for the journey.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_59,Failed to Understand Environment State,"The model attempted to start the engine without ensuring all doors were locked and the brake pedal was pressed, leading to an error.",3
+gemini-2.0-flash-exp-FC,multi_turn_base_60,Failed to Understand Environment State,"The model attempted to fill the fuel tank to maximum capacity without checking the current fuel level, and it also tried to start the engine without locking the doors first.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_61,Failed to Understand Function Documentation,"The model failed to pass the correct distance value to the 'estimate_drive_feasibility_by_mileage' function, resulting in an error due to a NoneType being used instead of a float.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_62,Failed to Understand Environment State,"The model failed to lock the doors in Turn 1, which was a necessary step before starting the engine in Turn 2.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_63,Failed to Understand Environment State,"The model attempted to start the engine before ensuring all doors were locked and the brake pedal was pressed, leading to an error in the sequence of operations.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_64,Failed to Understand User's Request,"The model failed to lock the doors and start the engine as requested by the user. Instead, it only checked the door status and did not proceed with the necessary actions to lock the doors and start the engine.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_65,Failed to Understand Environment State,"The model attempted to start the engine without ensuring all doors were locked, which is a prerequisite for starting the engine.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_66,Failed to Understand Environment State,"The model added 40 gallons to the fuel tank without considering the current fuel level, resulting in an overfill beyond the tank's capacity.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_67,Failed to Understand User's Request,"The model failed to estimate the drive feasibility and fill the fuel tank as requested by the user. Instead, it attempted to convert liters to gallons without a valid input and did not proceed to fill the tank.",2
+gemini-2.0-flash-exp-FC,multi_turn_base_68,Failed to Understand Environment State,"The model attempted to fill the fuel tank to 50 gallons without considering the current fuel level, leading to an error as it exceeded the tank's capacity.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_69,Failed to Understand Environment State,"The model released the brake pedal after starting the engine, which was not required as per the ground truth state.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_70,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_71,Failed to Understand Environment State,"The model attempted to fill the fuel tank with 50 gallons without considering the current fuel level of 5 gallons, exceeding the tank's capacity.",2
+gemini-2.0-flash-exp-FC,multi_turn_base_72,Failed to Understand Environment State,"The model failed to fill the fuel tank to the requested level, leaving the fuel level unchanged.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_73,Failed to Understand User's Request,"The assistant failed to fill the fuel tank to the required level in Turn 0, as the user requested a full tank for a long drive, but the assistant did not execute the fillFuelTank function.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_74,Failed to Understand Environment State,"The model attempted to start the engine without ensuring all doors were locked, which is a prerequisite for starting the engine.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_75,Failed to Understand User's Request,The model failed to execute the user's request to post a tweet about tire pressures and subsequently retweet and comment on it. It misunderstood the user's intent to perform these actions automatically without needing additional input like tweet IDs.,1
+gemini-2.0-flash-exp-FC,multi_turn_base_76,Failed to Understand Environment State,"The model attempted to start the engine without pressing the brake pedal, which is a requirement for starting the engine.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_77,Failed to Understand User's Request,"The model failed to execute the required actions for each user request, such as estimating distance, posting a tweet, and retweeting, despite having the necessary information and authentication.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_78,Failed to Understand User's Request,The assistant incorrectly stated that the tire pressure was not healthy and did not proceed to find the nearest tire shop as requested by the user.,0
+gemini-2.0-flash-exp-FC,multi_turn_base_79,Failed to Understand Environment State,"The model attempted to start the engine without ensuring all doors were locked, which is a prerequisite for starting the engine.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_80,Failed to Understand Environment State,"The model attempted to fill the fuel tank with 50 gallons without considering the current fuel level of 5 gallons, exceeding the tank's maximum capacity of 50 gallons.",2
+gemini-2.0-flash-exp-FC,multi_turn_base_81,Failed to Understand Environment State,"The model released the brake pedal after starting the engine, which was not required and led to a mismatch with the ground truth state.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_82,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_83,Failed to Understand Environment State,"The model attempted to start the engine without ensuring all doors were locked, which is a prerequisite for starting the engine.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_84,Failed to Understand Function Documentation,"The model failed to press the brake pedal before attempting to start the engine, which is a requirement according to the function documentation.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_85,Failed to Understand User's Request,"The model failed to estimate drive feasibility by mileage after calculating the distance, which was part of the user's request to check if the current fuel situation would suffice for the trip.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_86,Failed to Understand Function Documentation,"The model attempted to authenticate the Twitter account despite the user already being authenticated, leading to an unnecessary authentication step and failure to post the tweet.",2
+gemini-2.0-flash-exp-FC,multi_turn_base_87,Failed to Understand Environment State,"The model attempted to start the engine without ensuring all doors were locked first, leading to an error. Additionally, it did not press the brake pedal before starting the engine, which is required.",2
+gemini-2.0-flash-exp-FC,multi_turn_base_88,Failed to Understand User's Request,"The model failed to execute the user's request to fill the fuel tank to the max limit, lock all doors, and engage the parking brake in Turn 1.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_89,Failed to Understand User's Request,"The model failed to initiate the necessary steps to estimate the distance between Rivermist and Stonebrook, as requested by the user.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_90,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_91,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_92,Failed to Understand User's Request,The model failed to evaluate the vehicle's fuel level and mileage for the trip as requested by the user.,1
+gemini-2.0-flash-exp-FC,multi_turn_base_93,Failed to Understand User's Request,"The model failed to recognize that the user wanted to fill the fuel tank to full in Turn 1, despite the fuel level already being full from the previous turn. This led to unnecessary actions and errors in the sequence.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_94,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_95,Failed to Understand Environment State,"The model failed to press the brake pedal before attempting to start the engine, which is a necessary step according to the vehicle's environment state.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_96,Failed to Understand Function Documentation,"The model failed to press the brake pedal before attempting to start the engine, which is a requirement according to the function documentation.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_97,Failed to Understand User's Request,The model failed to send a message to Michael despite having his user ID available in the initial configuration.,4
+gemini-2.0-flash-exp-FC,multi_turn_base_98,Failed to Understand User's Request,"The model locked only the rear left door instead of ensuring all doors were locked, as requested by the user.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_99,Failed to Understand User's Request,The model found the nearest tire shop even though the tire pressure was healthy and above the threshold specified by the user.,3
+gemini-2.0-flash-exp-FC,multi_turn_base_100,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_101,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_102,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_103,Failed to Understand User's Request,The model failed to execute the order for 150 shares of OMEG at the current market price as requested by the user.,2
+gemini-2.0-flash-exp-FC,multi_turn_base_104,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_105,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_106,Failed to Understand User's Request,"The model unnecessarily called 'get_order_history' when the user only requested details of the latest order, which could have been directly retrieved using 'get_order_details'.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_107,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_108,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_109,Failed to Understand Function Documentation,"The model added unnecessary tags and mentions to the tweet, which were not specified in the user's request.",6
+gemini-2.0-flash-exp-FC,multi_turn_base_110,Failed to Understand User's Request,The model failed to place the buy order for 100 shares of the last stock in the watchlist (AAPL) as requested by the user.,1
+gemini-2.0-flash-exp-FC,multi_turn_base_111,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_112,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_113,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_114,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_115,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_116,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_117,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_118,Failed to Understand Environment State,"The model failed to retrieve the current stock price of AAPL before attempting to place an order, leading to an inability to execute the user's request.",2
+gemini-2.0-flash-exp-FC,multi_turn_base_119,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_120,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_121,Failed to Understand User's Request,"The model failed to execute the user's request to purchase 150 shares of AAPL at the prevailing market price, as it did not initiate the necessary function calls to retrieve the stock price and place the order.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_122,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_123,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_124,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_125,Failed to Understand User's Request,"The model failed to retrieve the user's watchlist and instead asked for clarification, despite the user's request being clear.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_126,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_127,Failed to Understand User's Request,The model failed to execute the user's request to acquire 150 shares of BDX at the existing market value by not utilizing the available stock information and placing the order.,2
+gemini-2.0-flash-exp-FC,multi_turn_base_128,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_129,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_130,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_131,Failed to Understand User's Request,The model failed to identify the third stock from the previously provided list of technology stocks and did not retrieve its details.,2
+gemini-2.0-flash-exp-FC,multi_turn_base_132,Failed to Understand Environment State,"The model failed to retrieve the current time and update the market status, which was necessary to fulfill the user's request to check the market conditions.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_133,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_134,Failed to Understand User's Request,"The model asked for the order ID instead of retrieving the details of the pending order directly, which was already available in the environment state.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_135,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_136,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_137,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_138,Failed to Understand Function Documentation,"The model attempted to delete a specific message using a message ID, which is not supported by the 'delete_message' function. The function only requires the receiver ID to delete the latest message.",4
+gemini-2.0-flash-exp-FC,multi_turn_base_139,Failed to Understand User's Request,"The model asked for the stock symbol of Zeta Corp, even though the user explicitly mentioned 'Zeta Corp's stock', indicating the symbol 'ZETA'.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_140,Failed to Understand User's Request,The model failed to add Zeta Corp's stock to the watchlist despite the user providing the stock symbol 'ZETA' in the request.,0
+gemini-2.0-flash-exp-FC,multi_turn_base_141,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_142,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_143,Failed to Understand User's Request,"The model failed to retrieve the order details for the substantial order value as requested by the user, instead asking for an order ID without attempting to identify the order from the available data.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_144,Failed to Understand User's Request,The model asked the user for the current time instead of using the 'get_current_time' function to retrieve it automatically.,0
+gemini-2.0-flash-exp-FC,multi_turn_base_145,Failed to Understand User's Request,"The model asked for an order ID when the user requested details about their latest order, which should have been retrieved directly from the environment state.",2
+gemini-2.0-flash-exp-FC,multi_turn_base_146,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_147,Failed to Understand User's Request,"The model failed to include the dollar sign ($) in the tweet content and did not use the correct format for tags and mentions, which were specified by the user.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_148,Failed to Understand User's Request,"The model failed to initiate the order for 100 shares of AAPL at the current market price, despite having access to the necessary stock information.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_149,Failed to Understand Function Documentation,"The model attempted to delete a message using a specific message ID, which is not supported by the function documentation. The function only allows deleting the latest message sent to a receiver.",4
+gemini-2.0-flash-exp-FC,multi_turn_base_150,Failed to Understand User's Request,The model set the budget limit directly to 15400 USD without converting from GBP to USD as requested by the user.,1
+gemini-2.0-flash-exp-FC,multi_turn_base_151,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_152,Failed to Understand User's Request,"The model failed to execute the booking process for the flight from San Francisco to Chicago as requested by the user, resulting in no booking being made.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_153,Failed to Understand User's Request,The model failed to proceed with booking the flight despite having all necessary information provided by the user.,3
+gemini-2.0-flash-exp-FC,multi_turn_base_154,Failed to Understand User's Request,"The model failed to verify the traveler's information using the provided details and instead asked for the date of birth in a different format, which was unnecessary given the user's input.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_155,Failed to Understand Function Documentation,"The model did not check the flight cost before booking, which is a required step to ensure the cost is within the user's budget.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_156,Failed to Understand User's Request,"The model failed to book the flight and retrieve the invoice as requested by the user, instead asking for information that was already provided.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_157,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_158,Failed to Understand User's Request,"The model asked for the full passport number instead of verifying the provided information, which was sufficient for the verification process.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_159,Failed to Understand User's Request,"The model failed to book the flight and purchase insurance as requested by the user, asking for additional information that was not necessary given the context.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_160,Failed to Understand User's Request,The model failed to perform the currency conversion and set the budget limit in USD as requested by the user.,0
+gemini-2.0-flash-exp-FC,multi_turn_base_161,Failed to Understand User's Request,"The model asked for the full expiration date of the credit card when it was not necessary for retrieving the balance, leading to no function call being made.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_162,Failed to Understand User's Request,The model failed to execute the required function calls to convert the currency and set the budget limit as requested by the user.,3
+gemini-2.0-flash-exp-FC,multi_turn_base_163,Failed to Understand Function Documentation,"The model did not call the 'get_flight_cost' function to determine the correct travel cost before booking the flight, leading to an incorrect deduction from the credit card balance.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_164,Failed to Understand Environment State,"The model failed to recognize that the nearest airport to Rivermist should be used for booking, leading to no booking being made.",2
+gemini-2.0-flash-exp-FC,multi_turn_base_165,Failed to Understand User's Request,The model failed to execute the necessary actions to book a flight and set the budget limit as requested by the user.,2
+gemini-2.0-flash-exp-FC,multi_turn_base_166,Failed to Understand User's Request,The model failed to book the flight and retrieve the invoice despite having all necessary information from previous turns.,2
+gemini-2.0-flash-exp-FC,multi_turn_base_167,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_168,Failed to Understand Environment State,"The model failed to log in the user before sending a message, which is required according to the function documentation.",4
+gemini-2.0-flash-exp-FC,multi_turn_base_169,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_170,Failed to Understand Environment State,The model failed to recognize that the tweet ID was already available in the environment state and asked the user for it instead of proceeding with the retweet action.,5
+gemini-2.0-flash-exp-FC,multi_turn_base_171,Failed to Understand Environment State,"The model did not update the budget limit after converting the currency from RMB to USD, leading to a mismatch in the final state.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_172,Failed to Understand Environment State,"The model failed to correctly compute the travel cost for the flight booking, resulting in an incorrect deduction from the credit card balance.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_173,Failed to Understand Environment State,The model failed to recognize that the access token was already available in the initial configuration and did not proceed with booking the flight.,2
+gemini-2.0-flash-exp-FC,multi_turn_base_174,Failed to Understand User's Request,"The model failed to execute the required actions for booking a flight, purchasing insurance, and retrieving an invoice, as it did not utilize the necessary functions and instead asked for additional information that was already available.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_175,Failed to Understand Environment State,"The model used an incorrect access token for the TravelAPI, leading to a mismatch in the final state compared to the ground truth.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_176,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_177,Failed to Understand Environment State,"The model booked a flight to 'TYO' instead of 'HND', which is the correct airport code for Tokyo as per the ground truth.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_178,Failed to Understand User's Request,The model failed to register the new credit card and purchase insurance as requested by the user.,0
+gemini-2.0-flash-exp-FC,multi_turn_base_179,Failed to Understand Function Documentation,"The model failed to use the correct airport codes (IATA format) for the 'book_flight' function, using city names instead.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_180,Failed to Understand Environment State,"The model attempted to retrieve an invoice for a cancelled booking, which was no longer available in the system.",3
+gemini-2.0-flash-exp-FC,multi_turn_base_181,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_182,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_183,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_184,Failed to Understand Function Documentation,"The model did not retrieve the flight cost before booking, leading to an incorrect booking cost and subsequent state mismatch.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_185,Failed to Understand User's Request,"The model repeatedly asked for the access token and additional information (airport names, insurance type, booking ID) despite the user providing sufficient context and information to proceed with the requests.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_186,Failed to Understand User's Request,The model contacted customer support with the user's entire message instead of summarizing or emphasizing the key issue as requested.,3
+gemini-2.0-flash-exp-FC,multi_turn_base_187,Failed to Understand User's Request,"The model failed to execute the required function calls to purchase insurance, retrieve the invoice, contact customer support, and create a ticket. Instead, it asked for additional information that was already available in the initial state or user request.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_188,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_189,Failed to Understand Function Documentation,The model failed to utilize the 'get_flight_cost' and 'book_flight' functions to complete the booking process as per the user's request.,0
+gemini-2.0-flash-exp-FC,multi_turn_base_190,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_191,Failed to Understand User's Request,"The model failed to verify the user's personal details by not calling the 'verify_traveler_information' function, instead asking for the full passport number, which was already provided.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_192,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_193,No Failure,No Failure Occurs,-1
+gemini-2.0-flash-exp-FC,multi_turn_base_194,Failed to Understand User's Request,"The model failed to execute the user's request to book a flight using the provided access token and card ID, despite having the necessary information.",1
+gemini-2.0-flash-exp-FC,multi_turn_base_195,Failed to Understand Environment State,"The model booked a flight without first checking the cost, leading to a discrepancy in the final state balance and booking details.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_196,Failed to Understand User's Request,"The model resolved the ticket without first retrieving its details, which was necessary to ensure the correct resolution process.",4
+gemini-2.0-flash-exp-FC,multi_turn_base_197,Failed to Understand User's Request,"The model failed to proceed with purchasing travel insurance and retrieving the invoice, despite having the necessary booking ID provided in the initial user request.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_198,Failed to Understand User's Request,"The model attempted to cancel a booking without first making a booking, leading to an error due to a non-existent booking ID.",0
+gemini-2.0-flash-exp-FC,multi_turn_base_199,Failed to Understand Function Documentation,"The model booked the flight without first checking the cost using the 'get_flight_cost' function, leading to an incorrect booking cost.",0

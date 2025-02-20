@@ -1,0 +1,201 @@
+model,entry_id,error_reason_type,error_reason_description,error_turn_id
+claude-3-5-sonnet-20241022-FC,multi_turn_base_0,Failed to Understand Environment State,"The model failed to navigate to the correct directory before attempting to move 'final_report.pdf', resulting in a failed move operation.",0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_1,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_2,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_3,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_4,Failed to Understand Environment State,"The model posted the unsorted content of the report instead of the sorted content, indicating a misunderstanding of the environment state.",2
+claude-3-5-sonnet-20241022-FC,multi_turn_base_5,Failed to Understand Environment State,"The model attempted to sort the contents of 'archive_summary.txt' without first displaying its contents, leading to an error as the file was not in the current directory.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_6,Failed to Understand Environment State,The model created the file 'Annual_Report_2023.docx' in the root directory instead of the 'communal' directory as requested by the user.,0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_7,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_8,Failed to Understand User's Request,"The assistant posted the wrong content to Twitter. The user requested to post the verbatim results of the diff, but the assistant posted a different content.",2
+claude-3-5-sonnet-20241022-FC,multi_turn_base_9,Failed to Understand Function Documentation,"The assistant attempted to use a path in the 'cp' command's destination parameter, which is not allowed according to the function documentation.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_10,Failed to Understand Environment State,"The model created the 'Projects' directory at the wrong location, outside the 'workspace' directory, leading to a mismatch in the final state.",0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_11,Failed to Understand Environment State,"The model incorrectly assumed the presence of mentions in the tweet, which were not part of the user's request or the ground truth state.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_12,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_13,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_14,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_15,Failed to Understand User's Request,"The model averaged the counts of lines, words, and characters instead of the numerical data values from the file.",4
+claude-3-5-sonnet-20241022-FC,multi_turn_base_16,Failed to Understand Function Documentation,"The model attempted to use a path in the 'cp' command's destination parameter, which is not allowed according to the function documentation.",0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_17,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_18,Failed to Understand Environment State,"The model attempted to change directories using a path, which is not allowed, leading to an error and failure to copy the files as requested.",0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_19,Failed to Understand Function Documentation,"The model attempted to use a path in the 'cp' function's destination parameter, which is not allowed according to the function documentation.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_20,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_21,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_22,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_23,Failed to Understand Function Documentation,"The model did not use the 'touch' function to create the file before writing content to it, which is a necessary step according to the function documentation.",0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_24,Failed to Understand Environment State,"The model incorrectly assumed that login was required to retrieve ticket details, despite the ticket being accessible without authentication.",2
+claude-3-5-sonnet-20241022-FC,multi_turn_base_25,Failed to Understand Environment State,"The model did not change the directory to 'Research2023' before sorting 'summary.txt', leading to sorting the wrong file.",2
+claude-3-5-sonnet-20241022-FC,multi_turn_base_26,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_27,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_28,Failed to Understand Environment State,"The model did not create the 'usage.txt' file before writing to it, which led to a discrepancy in the execution trajectory.",2
+claude-3-5-sonnet-20241022-FC,multi_turn_base_29,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_30,Failed to Understand User's Request,"The model included unnecessary mentions in the tweet, which were not part of the user's request to share the test results exactly as they are.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_31,Failed to Understand User's Request,The model used the 'find' function to locate 'summary.doc' even though it was already known to be in the current directory. This step was unnecessary and deviated from the minimum required trajectory.,0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_32,Failed to Understand Environment State,"The model wrote '2.0000' to 'result.txt' instead of '2.0', which was the expected content based on the tool response.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_33,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_34,Failed to Understand User's Request,"The model did not use the `cat` command to verify the content of the file before calculating the mean, which was necessary to ensure the correct data was used.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_35,Failed to Understand Environment State,"The model did not create the 'diff.txt' file before attempting to write to it, leading to a mismatch in the final state.",2
+claude-3-5-sonnet-20241022-FC,multi_turn_base_36,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_37,Failed to Understand Environment State,The model attempted to change to a non-existent 'temp' directory instead of directly counting lines in the existing 'dev_summary.txt' file.,0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_38,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_39,Failed to Understand Function Documentation,"The model did not use the 'touch' function to create the files before writing content to them, which is required according to the function documentation.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_40,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_41,Failed to Understand User's Request,"The model failed to identify and forward the notes from the file system to Bob, despite the user's clear request to forward the notes file content to Bob.",0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_42,Failed to Understand Environment State,"The model created a new 'Lectures' directory instead of recognizing the existing one, leading to a nested directory structure.",0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_43,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_44,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_45,Failed to Understand Function Documentation,"The model unnecessarily changed the directory to 'ResearchDocs' before using the 'find' function, which can directly search within a specified path without changing directories.",0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_46,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_47,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_48,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_49,Failed to Understand Environment State,"The model attempted to change directories using 'cd' when it was already in the correct directory, leading to an unnecessary error.",0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_50,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_51,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_52,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_53,Failed to Understand User's Request,"The assistant failed to post the tweet as requested by the user, despite being authenticated and having the necessary information to do so.",3
+claude-3-5-sonnet-20241022-FC,multi_turn_base_54,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_55,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_56,Failed to Understand Environment State,"The model released the brake pedal after starting the engine, which was not required and led to a mismatch with the ground truth state.",2
+claude-3-5-sonnet-20241022-FC,multi_turn_base_57,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_58,Failed to Understand Environment State,"The model did not fill the fuel tank to its maximum capacity of 50 gallons, leaving it at 30 gallons, which is insufficient for the journey.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_59,Failed to Understand User's Request,The model used the incorrect distance value (609 miles) instead of the calculated distance (980 km) for the logarithm calculation.,4
+claude-3-5-sonnet-20241022-FC,multi_turn_base_60,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_61,Failed to Understand Environment State,"The assistant failed to obtain the necessary location information for Rivermist, which prevented it from calculating the distance and determining the fuel requirement.",0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_62,Failed to Understand Environment State,"The model released the brake pedal after starting the engine, which was not necessary and led to a mismatch in the final state compared to the ground truth.",2
+claude-3-5-sonnet-20241022-FC,multi_turn_base_63,Failed to Understand Environment State,"The model filled the fuel tank with 43.86 gallons instead of rounding to the nearest hundredth as requested by the user, resulting in a discrepancy with the ground truth state.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_64,Failed to Understand Environment State,"The assistant set the navigation to the tire shop even though the tire pressures were indicated as healthy, which was unnecessary.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_65,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_66,Failed to Understand Environment State,The model filled the fuel tank to its maximum capacity of 50 gallons without considering the user's request to have a total of 40 gallons in the tank.,1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_67,Failed to Understand User's Request,"The assistant estimated the drive feasibility using an incorrect distance of 484.7 miles instead of the correct 780.0 kilometers, leading to an incorrect assessment of the vehicle's ability to cover the distance without refueling.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_68,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_69,Failed to Understand User's Request,"The model did not attempt to estimate the distance between San Francisco and Rivermist, as requested by the user. It only converted the fuel amount and filled the tank.",0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_70,Failed to Understand User's Request,The model failed to set navigation to the nearest tire service center after identifying the need to adjust tire pressure.,1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_71,Failed to Understand User's Request,"The model estimated the drive feasibility for a distance of 466 miles instead of the correct 750 kilometers, leading to an incorrect assessment of the vehicle's capability to make the trip.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_72,Failed to Understand Environment State,"The model released the brake pedal after starting the engine, which was not required and led to a mismatch with the ground truth state where the brake pedal should remain pressed.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_73,Failed to Understand Environment State,"The model released the brake pedal without confirming the user's intent to start driving, leading to a mismatch in the final state.",2
+claude-3-5-sonnet-20241022-FC,multi_turn_base_74,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_75,Failed to Understand Environment State,"The model started the engine without ensuring all doors were locked and the brake pedal was pressed, leading to multiple unnecessary steps to correct the state.",0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_76,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_77,Failed to Understand Environment State,"The model failed to retrieve the zipcode for Stonebrook, which was necessary to estimate the distance between San Francisco and Stonebrook. It only retrieved the zipcode for San Francisco and did not attempt to retrieve or ask for the zipcode of Stonebrook, leading to an incomplete trajectory.",0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_78,Failed to Understand User's Request,The model incorrectly added multiple mentions to the tweet instead of just the hashtag '#BusinessOnTheMove'.,1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_79,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_80,Failed to Understand User's Request,"The assistant failed to proceed with estimating the travel distance and assessing the vehicle's mileage capacity due to a lack of clarification on the Rivermist location, despite the user's request to determine the travel distance and verify mileage capacity.",0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_81,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_82,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_83,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_84,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_85,Failed to Understand User's Request,"The assistant incorrectly estimated the drive feasibility by using a distance of 609 miles instead of the correct distance of 980 miles, leading to an incorrect conclusion about the trip's feasibility.",0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_86,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_87,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_88,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_89,Failed to Understand Environment State,"The model filled the fuel tank to maximum capacity without checking the current fuel level first, leading to an incorrect end state.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_90,Failed to Understand Environment State,"The model failed to retrieve the zip code for Rivermist, which was necessary to estimate the distance between San Francisco and Rivermist.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_91,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_92,Failed to Understand User's Request,"The model estimated the drive feasibility using an incorrect distance of 466 miles instead of the correct 750 kilometers, leading to an incorrect assessment of the vehicle's ability to complete the journey.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_93,Failed to Understand Environment State,The model failed to set the navigation to the tire shop despite the user's request to provide directions if tire pressure falls below 40 psi.,2
+claude-3-5-sonnet-20241022-FC,multi_turn_base_94,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_95,Failed to Understand User's Request,"The assistant incorrectly converted the distance from kilometers to miles when relaying the message to Emma, despite the user's request to send the distance in miles as computed earlier.",3
+claude-3-5-sonnet-20241022-FC,multi_turn_base_96,Failed to Understand User's Request,The model failed to attempt retrieving the zipcode for 'Rivermist' and did not proceed to estimate the distance between the two cities as requested by the user.,1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_97,Failed to Understand User's Request,The model estimated the drive feasibility using an incorrect distance of 466 miles instead of the correct 750 kilometers (approximately 466 miles) for the journey from Rivermist to Stonebrook.,1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_98,Failed to Understand User's Request,"The model locked only the rear left door instead of ensuring all doors were locked, as requested by the user.",0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_99,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_100,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_101,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_102,Failed to Understand Environment State,The model failed to recognize the most recent order ID (12446) and instead retrieved details of an older completed order (12345) when the user requested to review the most recent order.,2
+claude-3-5-sonnet-20241022-FC,multi_turn_base_103,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_104,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_105,Failed to Understand Environment State,"The assistant attempted to access the watchlist without checking the authentication status, resulting in an error message due to lack of authentication.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_106,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_107,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_108,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_109,Failed to Understand Environment State,"The model incorrectly added tags and mentions to the tweet, which were not part of the user's request.",6
+claude-3-5-sonnet-20241022-FC,multi_turn_base_110,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_111,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_112,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_113,Failed to Understand Environment State,The model failed to recognize that 'QUAS' was already available in the stock list and should have been added to the watchlist directly without searching for the symbol by name.,0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_114,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_115,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_116,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_117,Failed to Understand Environment State,"The model failed to recognize that the stock symbol 'OMEG' was already available in the environment state and attempted to retrieve it using an incorrect function, leading to an inability to calculate the deposit amount.",5
+claude-3-5-sonnet-20241022-FC,multi_turn_base_118,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_119,Failed to Understand Environment State,The model failed to recognize that the user was already authenticated in the ticketing system and attempted to check login status instead of directly closing the ticket.,3
+claude-3-5-sonnet-20241022-FC,multi_turn_base_120,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_121,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_122,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_123,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_124,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_125,Failed to Understand Environment State,"The model incorrectly assumed the user was not logged in, despite the initial state indicating authentication was already completed.",0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_126,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_127,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_128,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_129,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_130,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_131,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_132,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_133,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_134,Failed to Understand User's Request,"The model failed to recognize that 'Quasar Ltd.' corresponds to the stock symbol 'QUAS', which was already available in the system. Instead, it attempted to find the symbol using the 'get_symbol_by_name' function, resulting in an unnecessary failure to retrieve the stock information and add it to the watchlist.",0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_135,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_136,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_137,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_138,Failed to Understand Function Documentation,"The model attempted to use the 'delete_message' function with an incorrect parameter 'message_id', which is not supported by the function documentation.",4
+claude-3-5-sonnet-20241022-FC,multi_turn_base_139,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_140,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_141,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_142,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_143,Failed to Understand User's Request,"The model failed to retrieve the details of the specific order with a substantial value as requested by the user, instead asking the user to specify an order ID, which was unnecessary given the context.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_144,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_145,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_146,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_147,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_148,Failed to Understand Environment State,"The model incorrectly assumed the priority level for the ticket creation, setting it to 3 instead of the default 1, leading to a mismatch in the final state.",4
+claude-3-5-sonnet-20241022-FC,multi_turn_base_149,Failed to Understand Function Documentation,"The model attempted to delete a message using an incorrect parameter 'message_id', which is not supported by the 'delete_message' function.",4
+claude-3-5-sonnet-20241022-FC,multi_turn_base_150,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_151,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_152,Failed to Understand User's Request,"The model attempted to contact customer support for a booking that was already cancelled, which was unnecessary as the user only requested to create a high-priority ticket.",2
+claude-3-5-sonnet-20241022-FC,multi_turn_base_153,Failed to Understand Environment State,"The model used a newly generated access token instead of the existing one, leading to a mismatch in the booking and invoice details.",3
+claude-3-5-sonnet-20241022-FC,multi_turn_base_154,Failed to Understand User's Request,"The model booked a business class flight instead of an economy class flight, which was within the user's budget preference.",3
+claude-3-5-sonnet-20241022-FC,multi_turn_base_155,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_156,Failed to Understand User's Request,The model failed to update the ticket's priority to the highest level (5) when the user requested to enhance the ticket's details to reflect the highest priority.,4
+claude-3-5-sonnet-20241022-FC,multi_turn_base_157,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_158,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_159,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_160,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_161,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_162,Failed to Understand User's Request,"The model requested additional traveler information before booking the flight, even though the user had already provided sufficient details for booking.",4
+claude-3-5-sonnet-20241022-FC,multi_turn_base_163,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_164,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_165,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_166,Failed to Understand Environment State,"The model failed to recognize that the flight booking was not completed, leading to incorrect assumptions about the booking status and subsequent actions.",2
+claude-3-5-sonnet-20241022-FC,multi_turn_base_167,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_168,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_169,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_170,Failed to Understand Environment State,"The model failed to recognize that the tweet should not have any mentions, but it included multiple mentions in the tweet.",4
+claude-3-5-sonnet-20241022-FC,multi_turn_base_171,Failed to Understand Environment State,"The model failed to update the MessageAPI state correctly by not including the sent message in the inbox, leading to a mismatch with the ground truth state.",2
+claude-3-5-sonnet-20241022-FC,multi_turn_base_172,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_173,Failed to Understand User's Request,"The model failed to recognize that the user wanted to cancel the unnecessary ticket linked to the booking, which was already present in the initial state. Instead, it asked for clarification on whether to cancel a support ticket or the flight booking.",3
+claude-3-5-sonnet-20241022-FC,multi_turn_base_174,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_175,Failed to Understand Environment State,"The model incorrectly assumed the need to authenticate with the TravelAPI using a new access token instead of using the existing one, leading to a mismatch in the final state.",0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_176,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_177,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_178,Failed to Understand Environment State,"The model failed to recognize that the booking ID 'flight_001' was already available in the environment state and did not proceed with the necessary actions for purchasing insurance, contacting customer support, or canceling the booking.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_179,Failed to Understand User's Request,"The model executed a cancellation request without confirming with the user, who only wanted to inform customer support about potential adjustments or explore refund possibilities.",3
+claude-3-5-sonnet-20241022-FC,multi_turn_base_180,Failed to Understand Environment State,"The model attempted to retrieve an invoice for a booking that was already cancelled and removed from the system, leading to an unnecessary function call and error.",3
+claude-3-5-sonnet-20241022-FC,multi_turn_base_181,Failed to Understand Environment State,"The model incorrectly set the priority of the ticket to 3 instead of the default 1, which was not specified by the user.",4
+claude-3-5-sonnet-20241022-FC,multi_turn_base_182,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_183,Failed to Understand Environment State,"The model posted a tweet with incorrect mentions, which were not specified by the user.",5
+claude-3-5-sonnet-20241022-FC,multi_turn_base_184,Failed to Understand Function Documentation,"The model attempted to use the 'delete_message' function with a 'message_id' parameter, which is not supported by the function documentation. This led to an execution error.",5
+claude-3-5-sonnet-20241022-FC,multi_turn_base_185,Failed to Understand User's Request,"The model failed to execute the required function calls for purchasing insurance and retrieving the invoice, despite having the necessary access token and booking ID. It incorrectly requested additional authentication details instead of proceeding with the actions.",1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_186,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_187,Failed to Understand Environment State,The model failed to recognize that the booking_id 'insurance_12345' was already available in the initial state and did not require additional input from the user.,0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_188,Failed to Understand Function Documentation,"The model did not authenticate the Twitter account before posting a tweet, which is required according to the function documentation.",4
+claude-3-5-sonnet-20241022-FC,multi_turn_base_189,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_190,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_191,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_192,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_193,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_194,Failed to Understand User's Request,"The model failed to contact customer support due to lack of a specific message, even though the user requested to relay a booking-related query.",4
+claude-3-5-sonnet-20241022-FC,multi_turn_base_195,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_196,Failed to Understand Environment State,"The model resolved and closed the ticket without first checking its current status, leading to a mismatch in the final state.",4
+claude-3-5-sonnet-20241022-FC,multi_turn_base_197,Failed to Understand Environment State,"The model registered a new credit card instead of using the existing one, leading to an incorrect end state with an additional card entry.",0
+claude-3-5-sonnet-20241022-FC,multi_turn_base_198,No Failure,No Failure Occurs,-1
+claude-3-5-sonnet-20241022-FC,multi_turn_base_199,Failed to Understand User's Request,"The model failed to contact customer support as requested by the user, instead asking for more details about the issues faced during booking.",2
