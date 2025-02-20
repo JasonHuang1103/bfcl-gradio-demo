@@ -5,27 +5,28 @@ from const import *
 state = State(DEFAULT_MODEL_1, DEFAULT_MODEL_2)
 
 def update_entry_id(entry_id):
-    num_turn_1, num_turn_2, processed_step_response_1, processed_step_response_2 = state.update_entry(entry_id)
-    return processed_step_response_1, processed_step_response_2, f"{0}/{state.max_num_turn}"
-  
-def update_turn_id(entry_id, turn_id, increase=True):
-    turn_id = int(turn_id[0])
-    if increase:
-        turn_id = min(turn_id + 1, state.max_num_turn)
-    else:
-        turn_id = max(turn_id - 1, 0)
-    processed_step_response_1, processed_step_response_2 = state.update_turn(entry_id, turn_id)
-    return processed_step_response_1, processed_step_response_2, f'{turn_id}/{state.max_num_turn}'
+    error_info_1, error_info_2 = state.update_entry(entry_id)
+    # Format the display for each model
+    display_1 = [
+        ["Error Type:", error_info_1['type']],
+        ["Error Description:", error_info_1['description']],
+        ["Turn ID:", str(error_info_1['turn_id'])]
+    ]
+    display_2 = [
+        ["Error Type:", error_info_2['type']],
+        ["Error Description:", error_info_2['description']],
+        ["Turn ID:", str(error_info_2['turn_id'])]
+    ]
+    return display_1, display_2
 
 def update_model(model1, model2):
     state.update_model(model1, model2)
-    processed_step_response_1, processed_step_response_2, turn_id_display = update_entry_id(entry_id=0)
-    return processed_step_response_1, processed_step_response_2, turn_id_display, 0
+    display_1, display_2 = update_entry_id(entry_id=0)
+    return display_1, display_2, 0
 
 def initialize():
     print("Initializing...")
-    _, _, initial_processed_step_response_1, initial_processed_step_response_2 = state.update_entry(entry_id=0)
-    return initial_processed_step_response_1, initial_processed_step_response_2, f'{0}/{state.max_num_turn}'
+    return update_entry_id(entry_id=0)
 
 with gr.Blocks() as demo:
     gr.Markdown("# BFCL V3")
@@ -48,40 +49,29 @@ with gr.Blocks() as demo:
                 model_1 = gr.Dropdown(
                     choices=MODELS,
                     label="Model 1",
-                    value='gpt-4o-2024-08-06-FC', 
+                    value=DEFAULT_MODEL_1
                 )
                 model_2 = gr.Dropdown(
                     choices=MODELS, 
                     label="Model 2",
-                    value='meta-llama_Llama-3.1-8B-Instruct', 
+                    value=DEFAULT_MODEL_2
                 )
             
-            initial_chatbot_1, initial_chatbot_2, initial_turn_id_display = initialize()
+            initial_display_1, initial_display_2 = initialize()
             with gr.Row():
-                chatbot_1 = gr.Chatbot(
-                    value=initial_chatbot_1, 
-                    label="Model 1 Conversation"
+                chatbot_1 = gr.Dataframe(
+                    value=initial_display_1,
+                    headers=["Field", "Value"],
+                    label="Model 1 Error Analysis"
                 )
-                chatbot_2 = gr.Chatbot(
-                    value=initial_chatbot_2, 
-                    label="Model 2 Conversation"
+                chatbot_2 = gr.Dataframe(
+                    value=initial_display_2,
+                    headers=["Field", "Value"],
+                    label="Model 2 Error Analysis"
                 )
-                
-            with gr.Row(equal_height=True):
-                prev_turn_button = gr.Button("Previous Turn")
-                turn_id_display = gr.Textbox(
-                    value=initial_turn_id_display,
-                    label="Current Turn ID / Total Turn",
-                    interactive=False,
-                    elem_id="turn_id_display",
-                    lines=1,
-                )
-                next_turn_button = gr.Button("Next Turn")
                      
             with gr.Row(equal_height=True, scale=0.6):
-                prev_entry_button = gr.Button(
-                    "Previous Entry"
-                )
+                prev_entry_button = gr.Button("Previous Entry")
                 entry_id = gr.Number(
                     minimum=0,
                     maximum=199,
@@ -89,13 +79,7 @@ with gr.Blocks() as demo:
                     value=0,
                     interactive=True,
                 )
-                next_entry_button = gr.Button(
-                    "Next Entry aaa"
-                )
-                
-            with gr.Row():
-                text_output_1 = gr.Textbox(label="Model 1 Metrics", interactive=False)
-                text_output_2 = gr.Textbox(label="Model 2 Metrics", interactive=False)
+                next_entry_button = gr.Button("Next Entry")
 
             def update_entry_buttons(entry_id, increase=True):
                 new_entry_id = int(entry_id)
@@ -103,49 +87,37 @@ with gr.Blocks() as demo:
                     new_entry_id = min(new_entry_id + 1, 199)
                 else:
                     new_entry_id = max(new_entry_id - 1, 0)
-                processed_step_response_1, processed_step_response_2, turn_id = update_entry_id(new_entry_id)
-                return processed_step_response_1, processed_step_response_2, turn_id, new_entry_id
-                
-            prev_turn_button.click(
-                fn=lambda entry_id, turn_id_display: update_turn_id(entry_id, turn_id_display, False),
-                inputs=[entry_id, turn_id_display],
-                outputs=[chatbot_1, chatbot_2, turn_id_display]
-            )
-            
-            next_turn_button.click(
-                fn=lambda entry_id, turn_id_display: update_turn_id(entry_id, turn_id_display, True),
-                inputs=[entry_id, turn_id_display],
-                outputs=[chatbot_1, chatbot_2, turn_id_display]
-            )
+                display_1, display_2 = update_entry_id(new_entry_id)
+                return display_1, display_2, new_entry_id
             
             prev_entry_button.click(
                 fn=lambda entry_id: update_entry_buttons(entry_id, False),
                 inputs=[entry_id],
-                outputs=[chatbot_1, chatbot_2, turn_id_display, entry_id]
+                outputs=[chatbot_1, chatbot_2, entry_id]
             )
             
             next_entry_button.click(
                 fn=lambda entry_id: update_entry_buttons(entry_id, True),
                 inputs=[entry_id],
-                outputs=[chatbot_1, chatbot_2, turn_id_display, entry_id]
+                outputs=[chatbot_1, chatbot_2, entry_id]
             )
                 
             entry_id.change(
                 fn=update_entry_id,
                 inputs=[entry_id],
-                outputs=[chatbot_1, chatbot_2, turn_id_display]
+                outputs=[chatbot_1, chatbot_2]
             )
             
             model_1.change(
                 fn=update_model,
                 inputs=[model_1, model_2],
-                outputs=[chatbot_1, chatbot_2, turn_id_display, entry_id]
+                outputs=[chatbot_1, chatbot_2, entry_id]
             )
             
             model_2.change(
                 fn=update_model,
                 inputs=[model_1, model_2],
-                outputs=[chatbot_1, chatbot_2, turn_id_display, entry_id]
+                outputs=[chatbot_1, chatbot_2, entry_id]
             )
 
 if __name__ == "__main__":
