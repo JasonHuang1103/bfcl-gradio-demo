@@ -1,17 +1,11 @@
+import os
 
-RESULT_PATH = './judge_result/'
+RESULT_PATH = './result_score/2025-02-09/result/'
 
-DEFAULT_MODEL_1 = 'claude-3-5-sonnet'
-DEFAULT_MODEL_2 = 'DeepSeek-V3'
+DEFAULT_MODEL_1 = 'claude-3-5-sonnet-20241022-FC'
+DEFAULT_MODEL_2 = 'DeepSeek-V3-FC'
 
-MODELS = [
-    'claude-3-5-sonnet',
-    'DeepSeek-V3',
-    'gemini-2.0-flash-exp-FC',
-    'gpt-4o-2024-11-20-FC',
-    'meta-llama_Llama-3.1-70B-Instruct',
-    'mistral-large-2407-FC',
-    'nova-pro-v1.0',
-    'o1-2024-12-17-FC',
-    'Qwen_Qwen2.5-72B-Instruct'
-]
+MODELS = sorted([f for f in os.listdir(RESULT_PATH) if os.path.isdir(os.path.join(RESULT_PATH, f))])
+
+for model in MODELS:
+    print(model)
