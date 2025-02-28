@@ -31,15 +31,14 @@ def standardize_turn_response(result):
 def standardize_inference_response(result):
     inference_response = {}
     inference_response["id"] = result["id"]
-    inference_log = result["inference_log"]
-    inference_response["initial_api_state"] = inference_log[0] # a list of states
-    num_turns = (len(inference_log) - 1)//2 # the first one is the initial state
-    inference_response["num_turns"] = num_turns
-    inference_log = inference_log[1:] # remove the initial state
-    inference_response["turn_responses"] = [
-        standardize_turn_response(inference_log[i : i + 2])
-        for i in range(0, len(inference_log), 2)
-    ]
+    inference_response["result"] = result["result"]
+    
+    # Handle optional fields
+    inference_response["inference_log"] = result.get("inference_log", [])  # Default to empty list if missing
+    inference_response["input_token_count"] = result.get("input_token_count", [])
+    inference_response["output_token_count"] = result.get("output_token_count", [])
+    inference_response["latency"] = result.get("latency", [])
+    
     return inference_response
   
 def get_result(result_path):

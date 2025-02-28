@@ -34,18 +34,62 @@ class State:
       
     def update_entry(self, entry_id):
         """
-        When the entry_id is changed, update
-        * num_turns
-        * chatbot history
-        * metrics
+        Takes in the entry id and updates the state
         """
         entry_1 = self.result_1.iloc[entry_id]
         entry_2 = self.result_2.iloc[entry_id]
-        num_turn_1, num_turn_2 = entry_1['num_turns'], entry_2['num_turns']
-        self.max_num_turn = min(num_turn_1, num_turn_2) - 1
-        processed_step_response_1, processed_step_response_2 = self.get_processed_step_response(entry_id, turn_id=0)
+        
+        num_turn_1 = len(entry_1['result'])
+        num_turn_2 = len(entry_2['result'])
+        
+        self.max_num_turn = max(num_turn_1, num_turn_2)
+        self.current_entry_id = entry_id
+        self.current_turn_id = 0
+        self.current_step_id = 0
+        
+        step_response_1 = self.get_step_response(entry_1, 0, 0)
+        step_response_2 = self.get_step_response(entry_2, 0, 0)
+        
+        # Return empty list if no responses
+        processed_step_response_1 = step_response_1 if step_response_1 else []
+        processed_step_response_2 = step_response_2 if step_response_2 else []
+        
         return num_turn_1, num_turn_2, processed_step_response_1, processed_step_response_2
-      
+
+    def get_step_response(self, entry, turn_id, step_id):
+        """
+        Helper function to get the step response
+        """
+        try:
+            if turn_id >= len(entry['result']):
+                return None
+            
+            turn_response = entry['result'][turn_id]
+            if isinstance(turn_response, list):
+                # Handle tool responses (which are dictionaries) and text responses
+                tool_responses = [resp for resp in turn_response if isinstance(resp, dict)]
+                text_response = next((resp for resp in turn_response if isinstance(resp, str)), None)
+                
+                # Return in the format expected by chatbot
+                return [("User", text_response if text_response else "No user message"), 
+                       ("Assistant", self.format_tool_responses(tool_responses))]
+            return None
+        except Exception as e:
+            print(f"Error getting step response: {str(e)}")
+            return None
+
+    def format_tool_responses(self, tool_responses):
+        """
+        Format tool responses into a single string
+        """
+        response = ""
+        for tool_response in tool_responses:
+            if isinstance(tool_response, dict) and 'content' in tool_response:
+                content = tool_response['content']
+                if content is not None:
+                    response += content + "\n"
+        return response if response else "No response"
+
     def get_processed_step_response(self, entry_id, turn_id):
         """
         Return the processed step response for a given entry and turn index.
@@ -74,19 +118,33 @@ class State:
         assert {'assistant_response', 'handler_response', 'tool_response'}.issubset(step_response.keys())
         step_response_processed = ""
         step_response_processed += "<b>Model Response🤖: </b><br>" 
-        if 'model_response_decoded' in step_response['handler_response'].keys():
-            handler_responses = step_response['handler_response']['model_response_decoded']
+        
+        # Handle case where handler_response is None
+        if step_response['handler_response'] is None:
+            # Handle case where assistant_response is None
+            assistant_response = step_response['assistant_response']
+            if assistant_response is not None:
+                step_response_processed += assistant_response + "\n"
+            else:
+                step_response_processed += "No response\n"
         else:
-            handler_responses = [step_response['handler_response']['content']]
-        for handler_response in handler_responses:
-            step_response_processed += handler_response + "\n"
+            if 'model_response_decoded' in step_response['handler_response'].keys():
+                handler_responses = step_response['handler_response']['model_response_decoded']
+            else:
+                handler_responses = [step_response['handler_response']['content']]
+            for handler_response in handler_responses:
+                if handler_response is not None:
+                    step_response_processed += handler_response + "\n"
+                
         step_response_processed = step_response_processed[:-1]
         tool_responses = step_response['tool_response']
         if len(tool_responses) > 0:
             step_response_processed += "<br><br><b>Model Execution💻: </b><br>"
         for tool_response in tool_responses:
             if 'content' in tool_response.keys():
-                step_response_processed += tool_response['content'] + "\n"
+                content = tool_response['content']
+                if content is not None:
+                    step_response_processed += content + "\n"
         return step_response_processed
       
     def update_turn(self, entry_id, turn_id):
@@ -97,4 +155,3 @@ class State:
         entry_2 = self.result_2.iloc[entry_id]
         processed_step_response_1, processed_step_response_2 = self.get_processed_step_response(entry_id, turn_id=turn_id)
         return processed_step_response_1, processed_step_response_2
-        

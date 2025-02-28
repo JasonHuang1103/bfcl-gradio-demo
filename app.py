@@ -41,19 +41,19 @@ with gr.Blocks() as demo:
             gr.Markdown("# Metrics visualization and discussion")
             
         ### Page 3: This page contains the comparison of two different models
-        with gr.Tab("Compare LLM Performance fa"):
+        with gr.Tab("Compare LLM Performance"):
             gr.Markdown("# Compare LLM Performance")
             
             with gr.Row():
                 model_1 = gr.Dropdown(
                     choices=MODELS,
                     label="Model 1",
-                    value='gpt-4o-2024-08-06-FC', 
+                    value='gpt-4o-2024-11-20-FC',
                 )
                 model_2 = gr.Dropdown(
                     choices=MODELS, 
                     label="Model 2",
-                    value='meta-llama_Llama-3.1-8B-Instruct', 
+                    value='DeepSeek-V3-FC',
                 )
             
             initial_chatbot_1, initial_chatbot_2, initial_turn_id_display = initialize()
