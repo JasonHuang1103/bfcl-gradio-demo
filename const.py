@@ -1,9 +1,9 @@
 import os
 
-RESULT_PATH = './result_score/2025-02-09/result/'
+RESULT_PATH = './result_score/2025-02-27/result/'
 
 DEFAULT_MODEL_1 = 'claude-3-5-sonnet-20241022-FC'
-DEFAULT_MODEL_2 = 'DeepSeek-V3-FC'
+DEFAULT_MODEL_2 = 'DeepSeek-V3'
 
 MODELS = [
     'BitAgent_GoGoAgent',
